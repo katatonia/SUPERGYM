@@ -1,10 +1,7 @@
 .btn {
   display: inline-flex;
   padding: 10px 20px;
-
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
+  text-transform: uppercase;
   border: none;
   cursor: pointer;
 
@@ -22,5 +19,6 @@
 
   @include hover-focus {
     opacity: 0.8;
+    background: $gradient-btn-bg;
   }
 }

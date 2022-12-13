@@ -1,5 +1,15 @@
 // Colors
-// ---------------------------------
+$color-ghost-white:                #f8f9fc;
+$color-egyptian-blue:              #103aae;
+$color-whisper:                    #e8e8e8;
+$color-torch-red:                  #ed0233;
+$color-sapphire:                   #102654;
+$color-sapphire-rgba:              rgba(16, 38, 84, 0.89);
+$color-resolution-blue:            #1c3374;
+$color-light-slate-grey:           #74819c;
+$color-dark-gray:                  #afafaf;
+$color-grey:                       #787878;
+$color-crimson:                    #d10a42;
 
 // Default
 
@@ -16,6 +26,9 @@ $color-torch-red:                   #ff1553;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$gradient-bg:                       conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$gradient-btn-bg:                   linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$gradient-text:                     linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
 
 // Typography
 // ---------------------------------
@@ -47,6 +60,7 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1200:                           1200px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
