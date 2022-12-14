@@ -1,19 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <div></div>
-    </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="SUPERGYM" content="Тренажёрный зал в Омске">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+</head>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__menu menu">
+          <a class="menu__logo" href="#">
+            <svg width="122" height="44" viewBox="0 0 122 44">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <span class="menu__phone">
+            <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+          </span>
+        </div>
+        <div class="header__preview preview">
+          <div class="preview__content">
+            <h1 class="preview__title">
+              <span>Омск</span>
+              Фитнес<br>центр
+            </h1>
+            <ul class="preview__list">
+              <li class="preview__list-item">
+                <a href="#">Тренажёрный зал</a>
+              </li>
+              <li class="preview__list-item">
+                <a href="#">Групповые занятия</a>
+              </li>
+              <li class="preview__list-item">
+                <a href="#">Кардио-зона</a>
+              </li>
+            </ul>
+            <a href="#" class="preview__btn btn">Купить абонемент</a>
+          </div>
+        </div>
+        <div class="preview__img">
+          <picture>
+            <source media="(max-width: 1199px)" type="image/webp"
+              srcset="img/header/header-tablet.webp 1x, img/header/header-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/header/header.webp 1x, img/header/header@2x.webp 2x">
+
+            <source media="(max-width: 1199px)"
+              srcset="img/header/header-tablet.jpg 1x, img/header/header-tablet@2x.jpg 2x" width="324" height="390">
+            <img src="img/header/header.jpg" source="img/header/header@2x.jpg 2x" alt="Мужчина в футболке супермена."
+              width="500" height="556">
+          </picture>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro__container container">
+          <div class="intro__content">
+            <h2 class="intro__title">Тренажёрный зал</h2>
+            <p class="intro__subtitle">Просторный зал площадью 900 кв/м</p>
+            <div class="intro__text">
+              <p class="intro__p intro__p--first">
+                Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+                Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+              </p>
+              <p class="intro__p intro__p--second">
+                В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
+                есть
+                несколько оборудованных залов для различных видов групповых занятий.
+              </p>
+            </div>
+          </div>
+          <div class="intro__media">
+            <div class="intro__img">
+              <picture>
+                <source type="image/webp" srcset="img/intro/intro.webp 1x, img/intro/intro@2x.webp 2x">
+                <img src="img/intro/intro.jpg" source="img/intro/intro@2x 2x" alt="Тренажёрный зал." width="660"
+                  height="400">
+              </picture>
+            </div>
+            <div class="intro__video video">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/intro/intro-preview.webp 1x, img/intro/intro-preview@2x.webp 2x">
+                  <img src="img/intro/intro-previe.jpg" source="img/intro/intro-preview@2x 2x" alt="Тренажёрный зал."
+                    width="364" height="288">
+                </picture>
+              <img class="video__btn" src="img/svg/play-btn.svg" alt="Кнопка воспроизведения." width="100" height="100">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

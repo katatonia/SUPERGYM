@@ -1,0 +1,16 @@
+.header {
+  background: $gradient-bg-desktop;
+  padding-bottom: 36px;
+
+  @media (max-width: $vp-1199) {
+    background: $gradient-bg-tablet;
+  }
+
+  @media (max-width: $vp-767) {
+    background: $gradient-bg-mobile;
+  }
+}
+
+.header__container {
+  position: relative;
+}

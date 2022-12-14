@@ -1,0 +1,78 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 27px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 5px;
+  }
+}
+
+.menu__logo {
+  width: 122px;
+  height: 44px;
+
+  @media (max-width: $vp-1199) {
+    width: 80px;
+  }
+}
+
+.menu__logo svg {
+  fill: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    width: 82px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 69px;
+  }
+
+  @include hover-focus {
+    fill: $color-egyptian-blue;
+  }
+}
+
+.menu__phone {
+	margin-bottom: 20px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 0;;
+  }
+}
+
+.menu__phone a {
+  font: {
+    family: $alumni-sans-bold;
+    size: 26px;
+	}
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    font: {
+      size: 24px;
+    }
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 20px;
+    }
+  }
+
+  @include hover-focus {
+    background: $gradient-btn-bg;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

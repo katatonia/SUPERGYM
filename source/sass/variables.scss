@@ -1,4 +1,14 @@
 // Colors
+// ---------------------------------
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
 $color-ghost-white:                #f8f9fc;
 $color-egyptian-blue:              #103aae;
 $color-whisper:                    #e8e8e8;
@@ -11,22 +21,11 @@ $color-dark-gray:                  #afafaf;
 $color-grey:                       #787878;
 $color-crimson:                    #d10a42;
 
-// Default
-
-$color-default-black:               #000000;
-$color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
-
-// Project palette
-// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
-
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
-
 // Gradient
-
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$gradient-bg:                       conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$gradient-bg-desktop:               conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$gradient-bg-tablet:                conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$gradient-bg-mobile:                conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 $gradient-btn-bg:                   linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $gradient-text:                     linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
 
@@ -58,8 +57,10 @@ $trans-600:                         0.6s $tf-default;
 
 $vp-320:                            320px;
 $vp-375:                            375px;
+$vp-767:                            767px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1199:                           1199px;
 $vp-1200:                           1200px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
@@ -70,3 +71,12 @@ $vp-1920:                           1920px;
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
+
+// Fonts
+// ---------------------------------
+$alumni-sans-bold:                  "AlumniSans-Bold", "Arial", sans-serif;
+$alumni-sans-extra-bold:            "AlumniSans-ExtraBold", "Arial", sans-serif;
+$alumni-sans-semi-bold:             "AlumniSans-SemiBold", "Arial", sans-serif;
+$roboto-condensed-bold:             "RobotoCondensed-Bold", "Arial", sans-serif;
+$roboto-condensed-light:            "RobotoCondensed-Light", "Arial", sans-serif;
+$roboto-condensed-regular:          "RobotoCondensed-Regular", "Arial", sans-serif;
