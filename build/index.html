@@ -51,27 +51,27 @@
             </ul>
             <a href="#" class="preview__btn btn">Купить абонемент</a>
           </div>
-        </div>
-        <div class="preview__img">
-          <picture>
-            <source media="(max-width: 1199px)" type="image/webp"
-              srcset="img/header/header-tablet.webp 1x, img/header/header-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/header/header.webp 1x, img/header/header@2x.webp 2x">
+          <div class="preview__img">
+            <picture>
+              <source media="(max-width: 1199px)" type="image/webp"
+                srcset="img/header/header-tablet.webp 1x, img/header/header-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/header/header.webp 1x, img/header/header@2x.webp 2x">
 
-            <source media="(max-width: 1199px)"
-              srcset="img/header/header-tablet.jpg 1x, img/header/header-tablet@2x.jpg 2x" width="324" height="390">
-            <img src="img/header/header.jpg" source="img/header/header@2x.jpg 2x" alt="Мужчина в футболке супермена."
-              width="500" height="556">
-          </picture>
+              <source media="(max-width: 1199px)"
+                srcset="img/header/header-tablet.jpg 1x, img/header/header-tablet@2x.jpg 2x" width="324" height="390">
+              <img src="img/header/header.jpg" source="img/header/header@2x.jpg 2x" alt="Мужчина в футболке супермена."
+                width="500" height="556">
+            </picture>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <section class="intro">
-        <div class="intro__container container">
+        <div class="intro__container">
           <div class="intro__content">
-            <h2 class="intro__title">Тренажёрный зал</h2>
+            <h2 class="intro__title">Тренажерный зал</h2>
             <p class="intro__subtitle">Просторный зал площадью 900 кв/м</p>
             <div class="intro__text">
               <p class="intro__p intro__p--first">
@@ -88,20 +88,80 @@
           <div class="intro__media">
             <div class="intro__img">
               <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+                <source media="(max-width: 1199px)" type="image/webp"
+                  srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/intro/intro.webp 1x, img/intro/intro@2x.webp 2x">
+
+                <source media="(max-width: 1199px)" srcset="img/intro/intro.jpg 1x, img/intro/intro@2x.jpg 2x">
                 <img src="img/intro/intro.jpg" source="img/intro/intro@2x 2x" alt="Тренажёрный зал." width="660"
                   height="400">
               </picture>
             </div>
             <div class="intro__video video">
-                <picture>
-                  <source type="image/webp"
-                    srcset="img/intro/intro-preview.webp 1x, img/intro/intro-preview@2x.webp 2x">
-                  <img src="img/intro/intro-previe.jpg" source="img/intro/intro-preview@2x 2x" alt="Тренажёрный зал."
-                    width="364" height="288">
-                </picture>
-              <img class="video__btn" src="img/svg/play-btn.svg" alt="Кнопка воспроизведения." width="100" height="100">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/intro/intro-preview-mobile.webp 1x, img/intro/intro-preview-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro/intro-preview.webp 1x, img/intro/intro-preview@2x.webp 2x">
+
+                <source media="(max-width: 767px)"
+                  srcset="img/intro/intro-preview-mobile.jpg 1x, img/intro/intro-preview-mobile@2x.jpg 2x">
+                <img class="video__preview" src="img/intro/intro-preview.jpg" source="img/intro/intro-preview@2x 2x"
+                  alt="Превью видео с тренажёрным залом." width="364" height="228">
+              </picture>
+              <iframe class="video__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              <button class="video__play" type="button">
+                <img src="img/svg/play-btn.svg" width="100" height="100" alt="Воспроизвести видео.">
+              </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="tariffs">
+        <div class="tariffs__container container">
+          <h2 class="tariffs__title">Абонементы</h2>
+
+        </div>
+      </section> -->
+
+      <section class="promo">
+        <div class="promo__container container">
+            <div class="promo__content">
+                <h2>Super<br>games</h2>
+                <p class="promo__subtitle">Ежегодные соревнования по CrossFit</p>
+                <ul class="promo__list">
+                  <li class="promo__list-item">
+                    <h3>Дата</h3>
+                    <p>7</p>
+                    <!-- <span>марта 2019</span> -->
+                  </li>
+                  <li class="promo__list-item">
+                    <h3>Время</h3>
+                    <p>12:00</p>
+                  </li>
+                </ul>
+                <a href="#" class="btn">Заполнить заявку</a>
+            </div>
+          <div class="promo__img">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp"
+              srcset="img/promo/promo-mobile.webp 1x, img/promo/promo-mobile@2x.webp 2x">
+              <source media="(max-width: 1199px)" type="image/webp"
+              srcset="img/promo/promo-tablet.webp 1x, img/promo/promo-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/promo/promo.webp 1x, img/promo/promo@2x.webp 2x">
+
+              <source media="(max-width: 767px)"
+              srcset="img/promo/promo-mobile.jpg 1x, img/promo/promo-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)"
+              srcset="img/promo/promo-tablet.jpg 1x, img/promo/promo-tablet@2x.jpg 2x">
+              <img src="img/promo/promo.jpg" srcset="img/promo/promo@2x.jpg 2x" alt="Плавец." width="660" height="500">
+            </picture>
           </div>
         </div>
       </section>

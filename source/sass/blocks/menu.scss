@@ -17,6 +17,7 @@
 .menu__logo {
   width: 122px;
   height: 44px;
+  margin-bottom: 10px;
 
   @media (max-width: $vp-1199) {
     width: 80px;
@@ -43,7 +44,7 @@
 	margin-bottom: 20px;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: 0;;
+    margin-bottom: 10px;
   }
 }
 

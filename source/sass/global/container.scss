@@ -5,7 +5,10 @@
   padding: 0 20px;
 
   @media (max-width: $vp-1199) {
-    max-width: 708px;
+    padding: 0 45px;
+  }
+
+  @media (max-width: $vp-767) {
     padding: 0 15px;
   }
 }

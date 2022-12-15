@@ -1,16 +1,23 @@
 .header {
   background: $gradient-bg-desktop;
-  padding-bottom: 36px;
+  padding-bottom: 50px;
 
   @media (max-width: $vp-1199) {
     background: $gradient-bg-tablet;
+    padding-bottom: 60px;
   }
 
   @media (max-width: $vp-767) {
     background: $gradient-bg-mobile;
+    padding-bottom: 35px;
   }
 }
 
-.header__container {
-  position: relative;
+.header__preview {
+  display: grid;
+  grid-template-columns: minmax(0, 396px) minmax(0, 565px);
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
 }
