@@ -49,7 +49,7 @@
                 <a href="#">Кардио-зона</a>
               </li>
             </ul>
-            <a href="#" class="preview__btn btn">Купить абонемент</a>
+            <a href="#tariffs" class="preview__btn btn">Купить абонемент</a>
           </div>
           <div class="preview__img">
             <picture>
@@ -123,12 +123,117 @@
         </div>
       </section>
 
-      <!-- <section class="tariffs">
+      <section class="tariffs" id="tariffs">
         <div class="tariffs__container container">
           <h2 class="tariffs__title">Абонементы</h2>
-
+          <div class="tariffs__tabs tabs">
+            <nav class="tabs__nav">
+              <a class="tabs__btn no-js active" data-tab="#tab-01">1 месяц</a>
+              <a class="tabs__btn no-js" data-tab="#tab-02">6 месяцев</a>
+              <a class="tabs__btn no-js" data-tab="#tab-03">12 месяцев</a>
+            </nav>
+            <div class="tabs__body">
+              <ul class="tabs__list no-js active" id="tab-01">
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>С тренером</h2>
+                    <p>12 занятий</p>
+                    <span>5000
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>Дневной</h2>
+                    <p>С 8:00 до 17:00</p>
+                    <span>1700
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>Полный день</h2>
+                    <p>С 8:00 до 22:00</p>
+                    <span>2700
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="tabs__list no-js" id="tab-02">
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>С тренером</h2>
+                    <p>12 занятий</p>
+                    <span>29000
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>Дневной</h2>
+                    <p>С 8:00 до 17:00</p>
+                    <span>10000
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>Полный день</h2>
+                    <p>С 8:00 до 22:00</p>
+                    <span>15000
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="tabs__list no-js" id="tab-03">
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>С тренером</h2>
+                    <p>12 занятий</p>
+                    <span>57000
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>Дневной</h2>
+                    <p>С 8:00 до 17:00</p>
+                    <span>19000
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+                <li class="tabs__wrapper">
+                  <div>
+                    <h2>Полный день</h2>
+                    <p>С 8:00 до 22:00</p>
+                    <span>29000
+                      <b>&#8381;</b>
+                    </span>
+                    <a class="btn" href="#">Купить абонемент</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section> -->
+        <img src="img/svg/barbells.svg" alt="Диски от штанги." width="321" height="384">
+      </section>
 
       <section class="promo">
         <div class="promo__container container">
@@ -138,8 +243,13 @@
                 <ul class="promo__list">
                   <li class="promo__list-item">
                     <h3>Дата</h3>
-                    <p>7</p>
-                    <!-- <span>марта 2019</span> -->
+                    <div class="promo__list-item--date">
+                     <p>7</p>
+                     <div>
+                      <span>Марта</span>
+                      <span>2019</span>
+                     </div>
+                    </div>
                   </li>
                   <li class="promo__list-item">
                     <h3>Время</h3>
@@ -166,6 +276,56 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <a class="footer__logo" href="#">
+          <svg width="88" height="32" viewBox="0 0 88 32">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#">Услуги</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#">Абонементы</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#">Акции</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#">Тренеры</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#">Расписание</a>
+          </li>
+        </ul>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a href="#">
+              <svg width="25" height="25" viewBox="0 0 25 25">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">
+              <svg width="25" height="25" viewBox="0 0 25 25">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">
+              <svg width="25" height="25" viewBox="0 0 25 25">
+                <use xlink:href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
 
   <script src="js/vendor.min.js"></script>

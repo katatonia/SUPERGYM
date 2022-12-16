@@ -1,0 +1,54 @@
+.footer {
+  background-color: $color-default-black;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.footer__logo {
+  width: 88px;
+  height: 32px;
+  fill: $color-default-white;
+
+  @include hover-focus {
+    fill: $color-torch-red;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.footer__list-item a {
+  font: {
+    family: $roboto-condensed-regular;
+    size: 14px;
+  }
+  line-height: 16px;
+  color: $color-default-white;
+
+  @include hover-focus {
+    background: $gradient-btn-bg;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__social-item a {
+  fill: $color-default-white;
+
+  @include hover-focus {
+    fill: $color-torch-red;
+  }
+}

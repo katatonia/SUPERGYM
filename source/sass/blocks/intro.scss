@@ -1,3 +1,15 @@
+.intro {
+  padding-bottom: 120px;
+
+  @media (max-width: $vp-1199) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 70px;
+  }
+}
+
 .intro__container {
   display: grid;
   grid-template-columns: minmax(0, 417px) 1fr;

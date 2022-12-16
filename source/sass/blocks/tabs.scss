@@ -1,0 +1,185 @@
+.tabs__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 34px;
+  }
+}
+
+.tabs__btn {
+  font: {
+    family: $roboto-condensed-regular;
+    size: 20px;
+  }
+  line-height: 30px;
+  color: $color-sapphire-rgba;
+  padding: 0 22px 10px 22px;
+  border-bottom: 2px solid $color-grey;
+  cursor: pointer;
+
+  &.active {
+    color: $color-sapphire;
+    border-bottom: 2px solid $color-crimson;
+  }
+
+  &.no-js {
+    border-bottom: 2px solid $color-grey;
+  }
+
+  @media (max-width: $vp-1199) {
+    font: {
+      size: 18px;
+    }
+    line-height: 27px;
+    padding: 0 27px 12px;
+  }
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 16px;
+    }
+    padding: 0 20px 12px;
+  }
+}
+
+.tabs__nav a:first-child {
+  padding-left: 0;
+}
+
+.tabs__nav a:last-child {
+  padding-right: 0;
+}
+
+.tabs__list {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  &.active {
+    display: grid;
+  }
+
+  &.no-js {
+    display: grid;
+  }
+}
+
+.tabs__list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-default-white;
+  padding: 58px 70px;
+
+  @media (max-width: $vp-1199) {
+    padding: 58px 113px 65px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 44px 32px 52px;
+  }
+}
+
+.tabs__wrapper {
+  padding: 6px;
+  margin-bottom: 40px;
+  background: $color-default-white;
+
+  @include hover-focus {
+    padding: 6px;
+    background: $gradient-text;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.tabs__list h2 {
+  font: {
+    family: $roboto-condensed-bold;
+    size: 26px;
+  }
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 10px;
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 22px;
+    }
+    line-height: 24px;
+  }
+}
+
+.tabs__list p {
+  font: {
+    family: $roboto-condensed-regular;
+    size: 16px;
+  }
+  line-height: 24px;
+  color: $color-catalina-blue;
+  text-align: center;
+  padding-bottom: 65px;
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 56px;
+  }
+}
+
+.tabs__list span {
+  display: flex;
+  justify-content: center;
+  font: {
+    family: $roboto-condensed-bold;
+    size: 60px;
+  }
+  line-height: 90px;
+  color: $color-egyptian-blue;
+  text-shadow: $color-whisper 0 -20px;
+  padding-bottom: 37px;
+
+  @media (max-width: $vp-767) {
+    font: {
+      size: 48px;
+    }
+    line-height: 72px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 31px;
+  }
+}
+
+.tabs__list b {
+  color: $color-default-black;
+}
+
+.tabs__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: {
+    family: $roboto-condensed-bold;
+    size: 12px;
+  }
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  outline: 2px solid $color-resolution-blue;
+  margin-top: auto;
+  padding: 23px;
+
+  @include hover-focus {
+    outline: none;
+    background: $gradient-btn-bg;
+    color: $color-default-white;
+  }
+}
