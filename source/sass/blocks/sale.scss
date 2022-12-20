@@ -206,4 +206,9 @@
   text-transform: lowercase;
   border-bottom: 1px solid $color-resolution-blue;
   letter-spacing: 0.05em;
+
+  @include hover-focus {
+    color: $color-torch-red;
+    border-bottom: 1px solid $color-torch-red;
+  }
 }

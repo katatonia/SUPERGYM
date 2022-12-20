@@ -1,3 +1,7 @@
+.trainers__container {
+  margin-bottom: 30px;
+}
+
 .trainers h2 {
   font: {
     family: $alumni-sans-semi-bold;
@@ -5,22 +9,23 @@
   }
   line-height: 59px;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
-.trainers-slider__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+// .trainers-slider__list {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 40px;
 
-  @media (max-width: $vp-1199) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
+//   @media (max-width: $vp-1199) {
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 30px;
+//   }
 
-  @media (max-width: $vp-767) {
-    grid-template-columns: 1fr;
-  }
-}
+//   @media (max-width: $vp-767) {
+//     grid-template-columns: 1fr;
+//   }
+// }
 
 .trainers-slide {
   position: relative;

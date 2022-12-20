@@ -140,17 +140,30 @@
   }
 }
 
-.tabs__list span {
+.tabs__price {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
   font: {
     family: $roboto-condensed-bold;
     size: 60px;
   }
   line-height: 90px;
   color: $color-egyptian-blue;
-  text-shadow: $color-whisper 0 -20px;
   padding-bottom: 37px;
+
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    font-size: 100px;
+    color: #e8e8e8;
+    z-index: -1;
+    bottom: 50px;
+    left: 0;
+    opacity: .48;
+  }
 
   @media (max-width: $vp-767) {
     font: {
@@ -164,7 +177,7 @@
   }
 }
 
-.tabs__list b {
+.tabs__price span {
   color: $color-default-black;
 }
 
