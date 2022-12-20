@@ -1,3 +1,7 @@
+.reviews {
+  margin-bottom: 52px;
+}
+
 .reviews h2 {
   font: {
     family: $alumni-sans-bold;
@@ -7,6 +11,15 @@
   letter-spacing: 0.03em;
   padding-bottom: 40px;
   text-align: center;
+}
+
+.reviews-list {
+  width: 560px;
+  min-height: 242px;
+}
+
+.reviews-slider {
+  width: 560px;
 }
 
 .reviews-slider__slide {

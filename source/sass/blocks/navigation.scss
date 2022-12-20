@@ -1,8 +1,8 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  margin-left: 50px;
-  margin-top: 5px;
+  margin: 0 0 19px 9px;
+  gap: 39px;
 
   @media (max-width: $vp-1199) {
     margin-top: 3px;
@@ -16,32 +16,10 @@
   }
 }
 
-.navigation__item {
-  margin-right: 40px;
-
-  @media (max-width: $vp-1199) {
-    margin-right: 30px;
-  }
-
-  @media (max-width: $vp-767) {
-    margin-top: 21px;
-  }
-}
-
-.navigation__item:last-child {
-  margin-right: 0;
-}
-
-.navigation__item:first-child {
-  @media (max-width: $vp-767) {
-    margin-top: 40px;
-  }
-}
-
 .navigation__link {
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   outline: none;
   transition: opacity 0.3s;

@@ -1,3 +1,7 @@
+.sale {
+  margin-top: 147px;
+}
+
 .sale__container {
   width: 100%;
   display: grid;
@@ -16,12 +20,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 38px;
+  padding-bottom: 120px;
 
   @media (max-width: $vp-1199) {
     grid-template-columns: 1fr;
   }
+}
+
+.sale__title {
+  font: {
+    family: $alumni-sans-semi-bold;
+    size: 54px;
+  }
+  line-height: 59px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .sale__content {
@@ -31,7 +45,7 @@
   flex-direction: column;
   background-color: $color-torch-red;
   color: $color-default-white;
-  padding: 87px 75px 50px;
+  padding: 34px 28px 45px;
 
   @media (max-width: $vp-1199) {
     padding: 50px 43px 50px;
@@ -42,7 +56,7 @@
   }
 }
 
-.sale__title {
+.sale__content span {
   display: flex;
   flex-direction: column;
   font: {
@@ -51,7 +65,7 @@
   }
   line-height: 79px;
   letter-spacing: 0.03em;
-  padding-left: 16px;
+  margin-top: -11px;
 
   @media (max-width: $vp-1199) {
     font: {
@@ -68,21 +82,22 @@
   }
 }
 
-.sale__title span {
+.sale__content h3 {
   font: {
     family: $roboto-condensed-bold;
     size: 28px;
   }
   line-height: 43px;
+  padding-left: 16px;
 }
 
-.sale p {
+.sale__content p {
   font: {
     family: $roboto-condensed-light;
     size: 18px;
   }
   line-height: 27px;
-  margin-left: 3px;
+  margin: 13px 0 0 17px;
 
   @media (max-width: $vp-1199) {
     font: {
@@ -100,16 +115,17 @@
 }
 
 .sale__content a {
+  width: 90px;
   font: {
     family: $roboto-condensed-bold;
-    size: 12px;
+    size: 16px;
   }
-  line-height: 14px;
+  line-height: 16px;
   letter-spacing: 0.05em;
   color: $color-default-white;
   border-bottom: 1px solid $color-default-white;
-  text-transform: lowercase;
-  margin-top: auto;
+  text-transform: uppercase;
+  margin: auto 0 0 17px;
 
   @include hover-focus {
     color: $color-resolution-blue;
@@ -142,7 +158,7 @@
 .sale__block {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 35px;
   justify-content: space-between;
 
   @media (max-width: $vp-1199) {
@@ -156,13 +172,16 @@
 
 .sale__block-wrapper {
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   border-style: solid;
   border-width: 7px;
   border-image: $gradient-text;
   border-image-slice: 1;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 35px;
+  padding: 14px 28px;
 
   @media (max-width: $vp-767) {
     padding: 50px;
@@ -173,7 +192,7 @@
 .sale__block-wrapper h3 {
   font: {
     family: $roboto-condensed-bold;
-    size: 36px;
+    size: 26px;
   }
   line-height: 50px;
 
@@ -190,6 +209,7 @@
     size: 16px;
   }
   line-height: 32px;
+  margin-top: -7px;
 
   @media (max-width: $vp-1199) {
     line-height: 22px;
@@ -197,15 +217,17 @@
 }
 
 .sale__block-wrapper a {
+  width: 70px;
   font: {
     family: $roboto-condensed-bold;
     size: 12px;
   }
   line-height: 14px;
   color: $color-resolution-blue;
-  text-transform: lowercase;
+  text-transform: uppercase;
   border-bottom: 1px solid $color-resolution-blue;
   letter-spacing: 0.05em;
+  margin-top: auto;
 
   @include hover-focus {
     color: $color-torch-red;

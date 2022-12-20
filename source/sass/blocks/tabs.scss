@@ -85,7 +85,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: $color-default-white;
-  padding: 58px 70px;
+  padding: 61px 70px;
 
   @media (max-width: $vp-1199) {
     padding: 58px 113px 65px;
@@ -115,7 +115,7 @@
   }
   line-height: 28px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 
   @media (max-width: $vp-767) {
     font: {
@@ -160,7 +160,7 @@
     font-size: 100px;
     color: #e8e8e8;
     z-index: -1;
-    bottom: 50px;
+    bottom: 60px;
     left: 0;
     opacity: .48;
   }
@@ -179,6 +179,7 @@
 
 .tabs__price span {
   color: $color-default-black;
+  padding-left: 13px;
 }
 
 .tabs__list a {

@@ -1,5 +1,5 @@
 .trainers__container {
-  margin-bottom: 30px;
+  margin-bottom: 93px;
 }
 
 .trainers h2 {
@@ -12,25 +12,28 @@
   margin-bottom: 50px;
 }
 
-// .trainers-slider__list {
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   gap: 40px;
+.trainers-slider__list.no-js {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 
-//   @media (max-width: $vp-1199) {
-//     grid-template-columns: repeat(2, 1fr);
-//     gap: 30px;
-//   }
+  @media (max-width: $vp-1199) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 
-//   @media (max-width: $vp-767) {
-//     grid-template-columns: 1fr;
-//   }
-// }
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
+}
 
 .trainers-slide {
   position: relative;
   width: 100%;
   min-height: 294px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .trainers-slide__content {
@@ -52,6 +55,7 @@
   }
   line-height: 27px;
   color: $color-default-white;
+  margin-top: 5px;
 }
 
 .trainers-slide__content p {
@@ -83,18 +87,21 @@
   line-height: 27px;
   color: $color-default-white;
   position: absolute;
-  bottom: 20px;
-  text-align: center;
+  top: 245px;
 }
 
 .trainers-slide__achives {
   font: {
     family: $roboto-condensed-regular;
-    size: 16px;
+    size: 14px;
   }
   line-height: 24px;
   color: $color-default-white;
   list-style: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0 0 33px;
 }
 
 

@@ -124,6 +124,7 @@
     size: 26px;
   }
   line-height: 39px;
+  margin: -15px 0 30px;
 
   @media (max-width: $vp-1199) {
     font-size: 22px;
@@ -137,6 +138,7 @@
   }
   line-height: 24px;
   color: $color-default-white;
+  padding: 0 25px;
 
   @media (max-width: $vp-1199) {
     padding: 15px 130px 0 130px;
@@ -163,7 +165,7 @@
 
 
 .advantages__item--space {
-  width: 32.8%;
+  width: 31.8%;
   padding-bottom: 82px;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 

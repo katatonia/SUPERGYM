@@ -1,11 +1,11 @@
 .form {
+  display: flex;
+  justify-content: flex-end;
   background-color: $color-sapphire;
 }
 
 .form__container {
-  padding: 70px 20px;
-  max-width: 410px;
-  margin: 0 auto;
+  padding: 71px 190px 0 0;
 
   @media (max-width: $vp-1199) {
     max-width: 100%;
@@ -20,13 +20,13 @@
 
 .form h2 {
   font: {
-    family: $alumni-sans-bold;
-    size: 42px;
+    family: $alumni-sans-extra-bold;
+    size: 55px;
   }
   line-height: 46px;
   color: $color-default-white;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  padding-bottom: 34px;
   text-align: center;
 
   @media (max-width: $vp-1199) {
@@ -73,6 +73,7 @@
 
 .form button {
   width: 100%;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;

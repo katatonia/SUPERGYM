@@ -4,6 +4,7 @@ const trainersContainer = document.querySelector('.trainers-slider');
 
 const createTrainersSlider = () => {
   if (trainersContainer) {
+    // eslint-disable-next-line
     const trainersSlider = new Swiper('.trainers-slider', {
       loop: true,
       navigation: {

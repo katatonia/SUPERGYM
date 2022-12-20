@@ -4,6 +4,7 @@ const reviewsContainer = document.querySelector('.reviews-slider');
 
 const createReviewsSlider = () => {
   if (reviewsContainer) {
+    // eslint-disable-next-line
     const reviewsSlider = new Swiper('.reviews-slider', {
       loop: true,
       slidesPerView: 1,

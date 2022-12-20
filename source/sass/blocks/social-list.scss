@@ -28,11 +28,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-
-  .social-list__item {
-    margin-left: 25px;
-  }
+  width: 97px;
+  margin-bottom: 13px;
 
   .social-list__link {
     border-radius: 50%;
