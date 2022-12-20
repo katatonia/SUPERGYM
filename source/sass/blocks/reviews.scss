@@ -1,0 +1,44 @@
+.reviews h2 {
+  font: {
+    family: $alumni-sans-bold;
+    size: 54px;
+  }
+  line-height: 59px;
+  letter-spacing: 0.03em;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.reviews-slider__slide {
+  width: 560px;
+  padding: 30px;
+  background-color: $color-resolution-blue;
+}
+
+.reviews-slider__slide h2 {
+  font: {
+    family: $roboto-condensed-bold;
+    size: 20px;
+  }
+  line-height: 30px;
+  color: $color-default-white;
+  padding-bottom: 10px;
+}
+
+.reviews-slider__slide p {
+  font: {
+    family: $roboto-condensed-regular;
+    size: 16px;
+  }
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.reviews-slider__btn {
+  stroke: $color-dark-gray;
+  cursor: pointer;
+}
+
+.reviews-slider__btn:nth-child(2) {
+  transform: rotate(180deg);
+}

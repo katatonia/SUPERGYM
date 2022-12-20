@@ -2,6 +2,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {onPlayClick} from './modules/video';
 import {onTabBtnClick} from './modules/tabs';
+import {reviewsSwiper} from './modules/reviews-slider';
+import {trainersSwiper} from './modules/trainers-slider';
+import {onFormSubmit} from './modules/local-storage';
 
 // ---------------------------------
 
@@ -13,6 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   onPlayClick();
   onTabBtnClick();
+  reviewsSwiper();
+  trainersSwiper();
+  onFormSubmit();
 
   // Modules
   // ---------------------------------
