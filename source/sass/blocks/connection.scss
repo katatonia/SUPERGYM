@@ -1,9 +1,9 @@
 .connection {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   border-top: 1px solid $color-light-slate-grey;
 
   @media (max-width: $vp-1199) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }

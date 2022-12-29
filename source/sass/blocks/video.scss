@@ -37,6 +37,26 @@
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 0;
+  top: 19%;
+  left: 28%;
   cursor: pointer;
+
+  @media (max-width: $vp-1199) {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.video__play img {
+  position: absolute;
+  top: 19%;
+  left: 28%;
+
+  @media (max-width: $vp-1199) {
+    left: 21%;
+  }
+
+  @media (max-width: $vp-767) {
+    left: 45%;
+  }
 }

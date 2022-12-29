@@ -1,29 +1,18 @@
-import Swiper from 'swiper';
-
-const reviewsContainer = document.querySelector('.reviews-slider');
+const reviewsSwiper = document.querySelector('.reviews__swiper');
+const reviewsButtonPrev = document.querySelector('.reviews__button-prev');
+const reviewsButtonNext = document.querySelector('.reviews__button-next');
 
 const createReviewsSlider = () => {
-  if (reviewsContainer) {
+  if (reviewsSwiper) {
     // eslint-disable-next-line
-    const reviewsSlider = new Swiper('.reviews-slider', {
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 57,
+    new Swiper(reviewsSwiper, {
       navigation: {
-        nextEl: '.reviews-slider__btn-next',
-        prevEl: '.reviews-slider__btn-prev',
+        prevEl: reviewsButtonPrev,
+        nextEl: reviewsButtonNext,
       },
-      breakpoints: {
-        320: {
-          spaceBetween: 32,
-        },
-        768: {
-          spaceBetween: 57,
-        },
-        1200: {
-          spaceBetween: 80,
-        },
-      },
+      slidesPerView: 1,
+      spaceBetween: 15,
+      autoHeight: true,
     });
   }
 };

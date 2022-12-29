@@ -1,5 +1,28 @@
+.trainers {
+  padding-top: 53px;
+  padding-bottom: 91px;
+
+  @media(max-width: $vp-1199) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  @media(max-width: $vp-767) {
+    padding-top: 13px;
+    padding-bottom: 70px;
+  }
+}
+
 .trainers__container {
-  margin-bottom: 93px;
+  position: relative;
+
+  @media(max-width: $vp-1199) {
+    padding: 0 101px;
+  }
+
+  @media(max-width: $vp-767) {
+    padding: 0 47px;
+  }
 }
 
 .trainers h2 {
@@ -7,139 +30,238 @@
     family: $alumni-sans-semi-bold;
     size: 54px;
   }
-  line-height: 59px;
+  line-height: 65px;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
+  color: $color-sapphire;
+  margin-top: 0;
+  margin-bottom: 48px;
 
-.trainers-slider__list.no-js {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-
-  @media (max-width: $vp-1199) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  @media(max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: -6px;
+    margin-bottom: 31px;
   }
 
-  @media (max-width: $vp-767) {
-    grid-template-columns: 1fr;
+  @media(max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 42px;
   }
 }
 
-.trainers-slide {
+.trainers__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.trainers__item {
   position: relative;
-  width: 100%;
-  min-height: 294px;
+  width: 260px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media(max-width: $vp-1199) {
+    width: 268px;
+  }
+
+  @media(max-width: $vp-767) {
+    width: 226px;
+  }
 }
 
-.trainers-slide__content {
-  display: none;
+.trainers__photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.trainers__photo h3 {
+  font: {
+    family: $roboto-condensed-bold;
+    size: 18px;
+  }
+  line-height: 150%;
+  color: $color-default-white;
+  position: absolute;
+  z-index: 1;
+  bottom: 22px;
+  margin: 0;
+
+  @media(max-width: $vp-1199) {
+    bottom: 21px;
+    margin-left: 7px;
+  }
+}
+
+.trainers__photo img {
+  height: 294px;
+  object-fit: cover;
+
+  @media(max-width: $vp-1199) {
+    width: 268px;
+  }
+
+  @media(max-width: $vp-767) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.trainers__info {
   position: absolute;
   top: 0;
-  right: 0;
+  background: rgba(16, 38, 84, 0.89);
+  color: $color-default-white;
   width: 100%;
   height: 100%;
-  background-color: $color-sapphire-rgba;
-  overflow: auto;
-  padding: 20px;
-}
+  z-index: 2;
+  padding: 52px 20px 52px 55px;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  display: none;
 
-.trainers-slide__content h3 {
-  font: {
-    family: $roboto-condensed-bold;
-    size: 18px;
+  @media(max-width: $vp-1199) {
+    padding-top: 53px;
+    padding-left: 25px;
+    width: 268px;
   }
-  line-height: 27px;
-  color: $color-default-white;
-  margin-top: 5px;
+
+  @media(max-width: $vp-767) {
+    padding-top: 42px;
+    padding-left: 30px;
+    width: 226px;
+  }
 }
 
-.trainers-slide__content p {
+.trainers__info h3 {
+  margin: 0;
+  margin-left: -12px;
+
+  @media(max-width: $vp-1199) {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+.trainers__info span {
   font: {
-    family: $roboto-condensed-regular;
+    family: $roboto-condensed-light;
     size: 16px;
   }
-  line-height: 24px;
-  color: $color-default-white;
-}
+  line-height: 150%;
+  color: #b6bdcc;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: -12px;
 
-.trainers-slide__img {
-  width: 100%;
-  height: 100%;
-  background-color: $color-light-slate-grey;
-}
-
-.trainers-slide__img img {
-  width: 100%;
-  height: 100%;
-  background-color: $color-light-slate-grey;
-}
-
-.trainers-slide h2 {
-  font: {
-    family: $roboto-condensed-bold;
-    size: 18px;
+  @media(max-width: $vp-1199) {
+    margin-top: -5px;
+    margin-bottom: 33px;
   }
-  line-height: 27px;
-  color: $color-default-white;
-  position: absolute;
-  top: 245px;
+
+  @media(max-width: $vp-767) {
+    margin-bottom: 34px;
+  }
 }
 
-.trainers-slide__achives {
+.trainers__info ul {
   font: {
-    family: $roboto-condensed-regular;
+    family: $roboto-condensed-light;
     size: 14px;
   }
-  line-height: 24px;
-  color: $color-default-white;
-  list-style: inside;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 30px 0 0 33px;
+  line-height: 150%;
+  padding: 0;
+  margin-left: 17px;
+  list-style-type: disc;
+
+  @media(max-width: $vp-1199) {
+    margin-left: 45px;
+  }
+
+  @media(max-width: $vp-767) {
+    margin-left: 20px;
+  }
 }
 
+.trainers__info li:not(:last-of-type) {
+  margin-bottom: 14px;
+}
 
-.trainers-slider__btn {
-  stroke: $color-dark-gray;
+.trainers__button-prev,
+.trainers__button-next {
+  position: absolute;
+  top: 50%;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 32px;
+  z-index: 1;
   cursor: pointer;
+  padding: 10px;
+  box-sizing: content-box;
+
+  @media(max-width: $vp-1199) {
+    margin-top: 15px;
+  }
+
+  @media(max-width: $vp-767) {
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
+    margin-top: 22px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
-.trainers-slider__btn:nth-child(2) {
+.trainers__button-prev {
+  left: -42px;
+
+  @media (max-width: $vp-767) {
+    left: 4px;
+  }
+}
+
+.trainers__button-next {
+  right: -42px;
   transform: rotate(180deg);
+
+  @media (max-width: $vp-767) {
+    right: 4px;
+  }
 }
 
-// Показ контента
+// // Показ контента
 
 @media (min-width: $vp-1200) {
-  .trainers-slide:hover h2 {
+  .trainers__photo:hover h3 {
     display: none;
   }
 
-  .trainers-slide:hover .trainers-slide__content {
+  .trainers__item:hover .trainers__info {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
   }
 }
 
-@media (max-width: $vp-1200) {
-  .trainers-slide:active h2 {
+@media (max-width: $vp-1199) {
+  .trainers__photo:active h3 {
     display: none;
   }
 
-  .trainers-slide:active .trainers-slide__content {
+  .trainers__photo:active ~ .trainers__info {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
   }
 }
