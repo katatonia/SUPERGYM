@@ -231,6 +231,10 @@
 .trainers__button-prev {
   left: -42px;
 
+  @media (max-width: $vp-1199) {
+    left: 40px;
+  }
+
   @media (max-width: $vp-767) {
     left: 4px;
   }
@@ -239,6 +243,10 @@
 .trainers__button-next {
   right: -42px;
   transform: rotate(180deg);
+
+  @media (max-width: $vp-1199) {
+    right: 40px;
+  }
 
   @media (max-width: $vp-767) {
     right: 4px;

@@ -162,6 +162,7 @@
 
   @media (max-width: $vp-1199) {
     margin-top: 15px;
+    top: 51%;
   }
 
   @media (max-width: $vp-767) {
@@ -169,6 +170,7 @@
     height: 19px;
     background-size: 10px 19px;
     margin-top: 22px;
+    top: 50%;
   }
 
   &:hover {
@@ -179,6 +181,10 @@
 .reviews__button-prev {
   left: 257px;
 
+  @media (max-width: $vp-1199) {
+    left: 40px;
+  }
+
   @media (max-width: $vp-767) {
     left: 4px;
   }
@@ -187,6 +193,10 @@
 .reviews__button-next {
   right: 257px;
   transform: rotate(180deg);
+
+  @media (max-width: $vp-1199) {
+    right: 40px;
+  }
 
   @media (max-width: $vp-767) {
     right: 4px;

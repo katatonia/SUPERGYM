@@ -3640,6 +3640,14 @@ button,
     margin-top: 15px;
   }
 
+  .trainers__button-prev {
+    left: 40px;
+  }
+
+  .trainers__button-next {
+    right: 40px;
+  }
+
   .trainers__photo:active h3 {
     display: none;
   }
@@ -3737,6 +3745,15 @@ button,
   .reviews__button-prev,
   .reviews__button-next {
     margin-top: 15px;
+    top: 51%;
+  }
+
+  .reviews__button-prev {
+    left: 40px;
+  }
+
+  .reviews__button-next {
+    right: 40px;
   }
 
   .connection {
@@ -4310,6 +4327,7 @@ button,
     height: 19px;
     background-size: 10px 19px;
     margin-top: 22px;
+    top: 50%;
   }
 
   .reviews__button-prev {
