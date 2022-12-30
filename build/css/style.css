@@ -2119,12 +2119,15 @@ button,
   position: relative;
 }
 
-.tariffs img {
+.tariffs::after {
   position: absolute;
-  right: -97px;
-  bottom: -153px;
-  width: 383px;
-  z-index: 1;
+  content: "";
+  background-image: url("../img/barbells.png");
+  background-repeat: no-repeat;
+  width: 287px;
+  height: 415px;
+  bottom: -70px;
+  right: 0;
 }
 
 .tabs__nav {
@@ -3475,10 +3478,10 @@ button,
     padding: 0 15px;
   }
 
-  .tariffs img {
-    right: 5px;
-    bottom: -116px;
-    width: 329px;
+  .tariffs::after {
+    background-image: url("../img/barbells-tablet.png");
+    bottom: -95px;
+    width: 347px;
   }
 
   .tabs__nav {
@@ -3821,6 +3824,12 @@ button,
   }
 }
 
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .tariffs::after {
+    background-image: url("../img/barbells-tablet@2x.png");
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
@@ -3991,7 +4000,7 @@ button,
     line-height: 35px;
   }
 
-  .tariffs img {
+  .tariffs::after {
     display: none;
   }
 
@@ -4516,5 +4525,11 @@ button,
 
   .footer__logo svg:hover:not(.focus-visible) {
     opacity: 0.7;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .tariffs::after {
+    background-image: url("../img/barbells@2x.png");
   }
 }
