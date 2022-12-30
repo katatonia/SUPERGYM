@@ -11,11 +11,13 @@ const getFormInputs = () => {
 };
 
 const onFormSubmit = () => {
-  form.addEventListener('submit', () => {
-    const {inputName, inputPhone} = getFormInputs();
-    localStorage.setItem('Имя', inputName.value);
-    localStorage.setItem('Телефон', inputPhone.value);
-  });
+  if (form) {
+    form.addEventListener('submit', () => {
+      const {inputName, inputPhone} = getFormInputs();
+      localStorage.setItem('Имя', inputName.value);
+      localStorage.setItem('Телефон', inputPhone.value);
+    });
+  }
 };
 
 export {onFormSubmit};
