@@ -1,13 +1,16 @@
 const form = document.querySelector('form');
 
 const getFormInputs = () => {
-  const inputName = form.querySelector('input[name="Имя"]');
-  const inputPhone = form.querySelector('input[name="Телефон"]');
-
-  return {
-    inputName,
-    inputPhone,
-  };
+  if (form) {
+    const inputName = form.querySelector('input[name="Имя"]');
+    const inputPhone = form.querySelector('input[name="Телефон"]');
+    return {
+      inputName,
+      inputPhone,
+    };
+  } else {
+    return false;
+  }
 };
 
 const onFormSubmit = () => {
