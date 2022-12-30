@@ -19,9 +19,10 @@
 }
 
 .advantages h2 {
-  font-family: $alumni-sans-semi-bold;
-  font-weight: 600;
-  font-size: 54px;
+  font: {
+    family: $alumni-sans-semi-bold;
+    size: 54px;
+  }
   line-height: 65px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
@@ -177,7 +178,7 @@
 .advantages__list--top .advantages__item {
   position: relative;
 
-    &::before {
+  &::before {
     position: absolute;
     content: "";
     width: 85%;
@@ -185,7 +186,7 @@
     background-color: rgba(209, 10, 66, 0.2);
     bottom: -78px;
 
-    @media(max-width: $vp-1199) {
+    @media (max-width: $vp-1199) {
       display: none;
     }
   }
@@ -202,7 +203,7 @@
     background-color: rgba(209, 10, 66, 0.2);
     bottom: -78px;
 
-    @media(max-width: $vp-1199) {
+    @media (max-width: $vp-1199) {
       display: none;
     }
   }
@@ -215,7 +216,7 @@
     margin-bottom: 22px;
   }
 
-  @media (max-width: $vp-767){
+  @media (max-width: $vp-767) {
     margin-bottom: 22px;
   }
 }

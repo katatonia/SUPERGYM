@@ -15,6 +15,7 @@
 
 .video__preview {
   width: 100%;
+  background-color: $color-default-white;
 
   @media (max-width: $vp-1199) {
     width: 266px;

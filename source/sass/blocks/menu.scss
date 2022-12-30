@@ -36,12 +36,12 @@
   }
 
   @include hover-focus {
-    fill: $color-torch-red;
+    opacity: 0.7;
   }
 }
 
 .menu__phone {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 
   @media (max-width: $vp-1199) {
     margin-bottom: 10px;
@@ -52,7 +52,7 @@
   font: {
     family: $alumni-sans-bold;
     size: 26px;
-	}
+  }
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $color-default-white;
@@ -72,8 +72,6 @@
   }
 
   @include hover-focus {
-    background: $gradient-btn-bg;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    opacity: 0.7;
   }
 }

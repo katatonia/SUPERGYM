@@ -17,8 +17,8 @@
     margin: 0 auto;
     padding-top: 30px;
     grid-template-areas:
-    "list title"
-    "btn btn";
+      "list title"
+      "btn btn";
     grid-template-columns: 1fr;
   }
 }
@@ -111,9 +111,7 @@
   color: $color-default-white;
 
   @include hover-focus {
-    background: $gradient-btn-bg;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    opacity: 0.7;
   }
 }
 

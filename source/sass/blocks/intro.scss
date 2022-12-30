@@ -44,14 +44,6 @@
   }
 }
 
-.intro__subtitle {
-  padding-bottom: 40px;
-
-  @media (max-width: $vp-767) {
-    padding: 0 0 24px 0;
-  }
-}
-
 .intro__p {
   &--first {
     margin-bottom: 10px;
@@ -96,9 +88,14 @@
     size: 18px;
   }
   line-height: 27px;
+  padding-bottom: 40px;
 
   @media (max-width: $vp-1199) {
     padding-bottom: 34px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 0 24px 0;
   }
 }
 
@@ -128,6 +125,7 @@
   max-width: 100%;
   max-height: 100%;
   padding-left: 82px;
+  background-color: $color-default-white;
 
   @media (max-width: $vp-1199) {
     display: flex;

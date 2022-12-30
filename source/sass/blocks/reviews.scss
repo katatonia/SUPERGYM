@@ -2,12 +2,12 @@
   padding-top: 67px;
   padding-bottom: 120px;
 
-  @media(max-width: $vp-1199) {
+  @media (max-width: $vp-1199) {
     padding-top: 94px;
     padding-bottom: 100px;
   }
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     padding-top: 64px;
     padding-bottom: 70px;
   }
@@ -21,9 +21,10 @@
 }
 
 .reviews h2 {
-  font-family: $alumni-sans-semi-bold;
-  font-weight: 600;
-  font-size: 54px;
+  font: {
+    family: $alumni-sans-semi-bold;
+    size: 54px;
+  }
   line-height: 65px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
@@ -31,14 +32,14 @@
   margin-bottom: 37px;
   margin-left: 8px;
 
-  @media(max-width: $vp-1199) {
+  @media (max-width: $vp-1199) {
     font-size: 42px;
     line-height: 50px;
     margin-left: -2px;
     margin-bottom: 39px;
   }
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 41px;
@@ -51,11 +52,11 @@
   list-style-type: none;
   width: 560px;
 
-  @media(max-width: $vp-1199) {
+  @media (max-width: $vp-1199) {
     width: 566px;
   }
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     width: 226px;
     height: auto;
   }
@@ -73,13 +74,13 @@
   padding: 55px 62px 55px;
   color: $color-default-white;
 
-  @media(max-width: $vp-1199) {
+  @media (max-width: $vp-1199) {
     padding-left: 65px;
     padding-bottom: 58px;
     row-gap: 11px;
   }
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     column-gap: 0;
     row-gap: 13px;
     padding: 48px 25px 35px;
@@ -92,7 +93,7 @@
   grid-row: 1/-1;
   margin-top: 7px;
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     grid-column: 1/2;
     grid-row: 1/2;
     width: 68px;
@@ -105,7 +106,7 @@
 .reviews__photo img {
   object-fit: cover;
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     width: 68px;
     height: 68px;
   }
@@ -113,26 +114,30 @@
 
 .reviews__item h3 {
   margin: 0;
-  font-weight: 700;
-  font-size: 20px;
+  font: {
+    weight: 700;
+    size: 20px;
+  }
   line-height: 150%;
   grid-column: 2/3;
   grid-row: 1/2;
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     line-height: 130%;
   }
 }
 
 .reviews__item p {
   margin: 0;
-  font-weight: 400;
-  font-size: 16px;
+  font: {
+    weight: 400;
+    size: 16px;
+  }
   line-height: 140%;
   grid-column: 2/3;
   grid-row: 2/3;
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     grid-column: 1/-1;
     text-align: center;
   }
@@ -155,11 +160,11 @@
   padding: 10px;
   box-sizing: content-box;
 
-  @media(max-width: $vp-1199) {
+  @media (max-width: $vp-1199) {
     margin-top: 15px;
   }
 
-  @media(max-width: $vp-767) {
+  @media (max-width: $vp-767) {
     width: 10px;
     height: 19px;
     background-size: 10px 19px;
