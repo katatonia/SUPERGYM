@@ -1828,7 +1828,7 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   width: 230px;
-  max-height: 55px;
+  height: 55px;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
@@ -1987,7 +1987,6 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  text-align: center;
 }
 
 .promo__content dl {
@@ -3841,7 +3840,7 @@ button,
   }
 }
 
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5) and (144dpi), (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2) and (144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) and (144dpi) {
   .tariffs::after {
     background-image: url("../img/barbells-tablet@2x.png");
   }
@@ -4546,7 +4545,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+@media (-webkit-min-device-pixel-ratio: 1.5) and (144dpi), (-o-min-device-pixel-ratio: 3/2) and (144dpi), (min-resolution: 1.5dppx) and (144dpi) {
   .tariffs::after {
     background-image: url("../img/barbells@2x.png");
   }
