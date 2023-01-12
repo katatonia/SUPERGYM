@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 47px;
+    padding-top: 45px;
   }
 }
 
@@ -41,10 +41,9 @@
   }
 
   @media (max-width: $vp-767) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "services subscriptions"
-    "discounts trainers schedule";
+    display: block;
+    column-count: 2;
+    gap: 78px;
     margin-bottom: 33px;
     margin-left: 0;
   }
@@ -71,17 +70,15 @@
 
 .footer__nav-item--services {
   @media (max-width: $vp-767) {
-    grid-area: services;
-    margin-top: -4px;
-    margin-bottom: 4px;
+    margin-top: 39px;
+    margin-bottom: 18px;
   }
 }
 
 .footer__nav-item--trainers {
   @media (max-width: $vp-767) {
-    grid-area: trainers;
-    margin-top: -4px;
-    margin-bottom: 4px;
+    margin-top: 17px;
+    margin-bottom: 16px;
   }
 }
 
@@ -127,7 +124,7 @@
   @media (max-width: $vp-767) {
     position: absolute;
     width: 68px;
-    margin-top: -8px;
+    margin-top: -3px;
   }
 
   @include hover-focus {
