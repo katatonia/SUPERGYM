@@ -1863,7 +1863,7 @@ button,
 }
 
 .intro {
-  padding-bottom: 120px;
+  padding-bottom: 9px;
 }
 
 .intro__container {
@@ -1913,12 +1913,13 @@ button,
   background-color: #ffffff;
 }
 
-.intro__video {
+.video {
   display: block;
   width: 364px;
   height: 228px;
   position: relative;
-  margin: -111px 0 0 20px;
+  bottom: 111px;
+  left: 438px;
 }
 
 .video__iframe {
@@ -1930,7 +1931,7 @@ button,
   left: 0;
 }
 
-.video__preview {
+.video__preview img {
   width: 100%;
   background-color: #ffffff;
 }
@@ -1942,12 +1943,6 @@ button,
   top: 19%;
   left: 28%;
   cursor: pointer;
-}
-
-.video__play img {
-  position: absolute;
-  top: 19%;
-  left: 28%;
 }
 
 .promo__container {
@@ -1987,6 +1982,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  padding-left: 10px;
 }
 
 .promo__content dl {
@@ -2146,7 +2142,7 @@ button,
   line-height: 30px;
   color: rgba(16, 38, 84, 0.89);
   padding: 0 24px 10px 22px;
-  border-bottom: 2px solid #787878;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   cursor: pointer;
 }
 
@@ -2157,7 +2153,7 @@ button,
 .tabs__btn.active::after {
   content: "";
   position: absolute;
-  width: 65px;
+  width: 100%;
   height: 2px;
   left: 0;
   bottom: -2px;
@@ -2555,10 +2551,9 @@ button,
 }
 
 .trainers__photo img {
-  height: 294px;
+  height: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #787878;
 }
 
 .trainers__info {
@@ -2582,6 +2577,9 @@ button,
 }
 
 .trainers__info h3 {
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
   margin: 0;
   margin-left: -12px;
 }
@@ -2591,9 +2589,10 @@ button,
   font-size: 16px;
   line-height: 150%;
   color: #b6bdcc;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   text-align: center;
   margin-left: -12px;
+  margin-top: -4px;
 }
 
 .trainers__info ul {
@@ -2612,18 +2611,17 @@ button,
 .trainers__button-prev,
 .trainers__button-next {
   position: absolute;
-  top: 50%;
+  top: 52%;
   margin-top: 30px;
   background-color: transparent;
   border: 0;
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 16px;
-  height: 32px;
+  width: 32px;
+  height: 34px;
   z-index: 1;
   cursor: pointer;
-  padding: 10px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
@@ -2634,11 +2632,11 @@ button,
 }
 
 .trainers__button-prev {
-  left: -42px;
+  left: -45px;
 }
 
 .trainers__button-next {
-  right: -42px;
+  right: -45px;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -2913,18 +2911,17 @@ button,
 .reviews__button-prev,
 .reviews__button-next {
   position: absolute;
-  top: 49%;
+  top: 51%;
   margin-top: 30px;
   background-color: transparent;
   border: 0;
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 16px;
-  height: 32px;
+  width: 32px;
+  height: 34px;
   z-index: 1;
   cursor: pointer;
-  padding: 10px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
@@ -2992,7 +2989,7 @@ button,
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #f8f9fc;
+  border-bottom: 1px solid rgb(116, 129, 156);
   padding-bottom: 7px;
   margin: 0 30px 30px 0;
 }
@@ -3319,7 +3316,7 @@ button,
   }
 
   .intro {
-    padding-bottom: 100px;
+    padding-bottom: 13px;
   }
 
   .intro__container {
@@ -3372,29 +3369,22 @@ button,
     object-fit: cover;
   }
 
-  .intro__video {
-    width: 266px;
-    height: 167px;
-    margin: -80px 0 0 20px;
-  }
-
   .video {
-    margin: 0 auto;
-  }
-
-  .video__preview {
     width: 266px;
     height: 167px;
-    margin-top: -84px;
+    margin: 0 auto;
+    bottom: 84px;
+    left: 0;
+  }
+
+  .video__preview img {
+    width: 266px;
+    height: 167px;
   }
 
   .video__play {
     width: 75px;
     height: 75px;
-  }
-
-  .video__play img {
-    left: 21%;
   }
 
   .promo__container {
@@ -3413,7 +3403,7 @@ button,
 
   .promo__content h2 {
     font-size: 48px;
-    margin-left: 6px;
+    margin-left: 0;
     margin-bottom: 10px;
   }
 
@@ -3464,6 +3454,7 @@ button,
   .tariffs__title {
     font-size: 42px;
     line-height: 46px;
+    margin-bottom: 19px;
   }
 
   .tariffs__tabs {
@@ -3605,24 +3596,26 @@ button,
     width: 268px;
   }
 
+  .trainers__photo {
+    width: 100%;
+    height: auto;
+  }
+
   .trainers__photo h3 {
     bottom: 21px;
     margin-left: 7px;
   }
 
   .trainers__photo img {
-    width: 268px;
+    min-width: 268px;
+    min-height: 294px;
+    width: 100%;
+    height: auto;
   }
 
   .trainers__info {
     padding-top: 53px;
-    padding-left: 25px;
-    width: 268px;
-  }
-
-  .trainers__info h3 {
-    font-size: 18px;
-    line-height: 150%;
+    padding-left: 39px;
   }
 
   .trainers__info span {
@@ -3631,7 +3624,11 @@ button,
   }
 
   .trainers__info ul {
-    margin-left: 45px;
+    margin-left: 29px;
+  }
+
+  .trainers__info li {
+    padding-left: 4px;
   }
 
   .trainers__button-prev,
@@ -3640,11 +3637,11 @@ button,
   }
 
   .trainers__button-prev {
-    left: 40px;
+    left: 37px;
   }
 
   .trainers__button-next {
-    right: 40px;
+    right: 37px;
   }
 
   .trainers__photo:active h3 {
@@ -3652,6 +3649,12 @@ button,
   }
 
   .trainers__photo:active ~ .trainers__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .trainers__photo:focus-within .trainers__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3678,7 +3681,7 @@ button,
   }
 
   .sale__content {
-    padding: 33px 48px 48px 30px;
+    padding: 34px 48px 43px 30px;
   }
 
   .sale__content span {
@@ -3689,13 +3692,16 @@ button,
 
   .sale__content p {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 23px;
     margin-top: 30px;
   }
 
   .sale__content a {
+    width: 77px;
     font-size: 14px;
     line-height: 11px;
+    margin-left: 16px;
+    padding-bottom: 4px;
   }
 
   .sale__block {
@@ -3703,10 +3709,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    gap: 30px;
   }
 
   .sale__block-wrapper {
-    min-height: 211px;
+    min-height: 214px;
     padding: 13px 28px;
   }
 
@@ -3837,6 +3844,7 @@ button,
 
   .footer__social-list {
     margin-right: -6px;
+    margin-left: 20px;
   }
 }
 
@@ -3973,20 +3981,17 @@ button,
     max-height: 313px;
   }
 
-  .intro__video {
+  .video {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    bottom: 0;
   }
 
-  .video__preview {
+  .video__preview img {
     width: 100%;
     height: auto;
     margin: 0;
-  }
-
-  .video__play img {
-    left: 45%;
   }
 
   .promo__container {
@@ -3997,10 +4002,9 @@ button,
 
   .promo__content {
     padding-top: 50px;
-  }
-
-  .promo__content h2 {
-    margin-left: 4px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
   }
 
   .promo__content p {
@@ -4159,14 +4163,12 @@ button,
   }
 
   .trainers__photo img {
-    width: 226px;
-    height: 274px;
+    min-height: 274px;
   }
 
   .trainers__info {
     padding-top: 42px;
-    padding-left: 30px;
-    width: 226px;
+    padding-left: 45px;
   }
 
   .trainers__info span {
@@ -4174,15 +4176,13 @@ button,
   }
 
   .trainers__info ul {
-    margin-left: 20px;
+    margin-left: 0;
   }
 
   .trainers__button-prev,
   .trainers__button-next {
-    width: 10px;
-    height: 19px;
     background-size: 10px 19px;
-    margin-top: 22px;
+    margin-top: 16px;
   }
 
   .trainers__button-prev {
@@ -4238,6 +4238,7 @@ button,
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+    padding-bottom: 0;
   }
 
   .sale__content {
@@ -4259,7 +4260,9 @@ button,
   }
 
   .sale__block-wrapper {
+    min-height: 210px;
     padding: 25px;
+    padding-bottom: 10px;
     text-align: center;
   }
 
@@ -4269,13 +4272,13 @@ button,
 
   .reviews {
     padding-top: 64px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
   }
 
   .reviews h2 {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 41px;
+    margin-bottom: 44px;
   }
 
   .reviews__list {
@@ -4322,8 +4325,6 @@ button,
 
   .reviews__button-prev,
   .reviews__button-next {
-    width: 10px;
-    height: 19px;
     background-size: 10px 19px;
     margin-top: 22px;
     top: 50%;
@@ -4355,6 +4356,7 @@ button,
 
   .form input {
     padding-left: 0;
+    margin-right: 15px;
   }
 
   .form button {
@@ -4466,12 +4468,19 @@ button,
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 320px) {
-  .video__preview {
+  .video__preview img {
     height: 167px;
+  }
+
+  .trainers__photo img {
+    width: 226px;
+    height: 274px;
+    min-width: auto;
   }
 }
 
@@ -4548,5 +4557,11 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5) and (144dpi), (-o-min-device-pixel-ratio: 3/2) and (144dpi), (min-resolution: 1.5dppx) and (144dpi) {
   .tariffs::after {
     background-image: url("../img/barbells@2x.png");
+  }
+}
+
+@media (width: 768px) {
+  .trainers__photo img {
+    height: 294px;
   }
 }

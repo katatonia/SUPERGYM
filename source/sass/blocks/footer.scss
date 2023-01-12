@@ -136,10 +136,12 @@
 
   @media (max-width: $vp-1199) {
     margin-right: -6px;
+    margin-left: 20px;
   }
 
   @media (max-width: $vp-767) {
     width: fit-content;
+    margin-left: 0;
   }
 }
 

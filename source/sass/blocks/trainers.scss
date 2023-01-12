@@ -79,6 +79,11 @@
   position: relative;
   display: flex;
   justify-content: center;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .trainers__photo h3 {
@@ -100,17 +105,28 @@
 }
 
 .trainers__photo img {
-  height: 294px;
+  height: auto;
   object-fit: cover;
-  background-color: $color-grey;
 
   @media (max-width: $vp-1199) {
-    width: 268px;
+    min-width: 268px;
+    min-height: 294px;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (width: 768px) {
+    height: 294px;
   }
 
   @media (max-width: $vp-767) {
+    min-height: 274px;
+  }
+
+  @media (max-width: 320px) {
     width: 226px;
     height: 274px;
+    min-width: auto;
   }
 }
 
@@ -130,25 +146,23 @@
 
   @media (max-width: $vp-1199) {
     padding-top: 53px;
-    padding-left: 25px;
-    width: 268px;
+    padding-left: 39px;
   }
 
   @media (max-width: $vp-767) {
     padding-top: 42px;
-    padding-left: 30px;
-    width: 226px;
+    padding-left: 45px;
   }
 }
 
 .trainers__info h3 {
+  font: {
+    family: $roboto-condensed-bold;
+    size: 18px;
+  }
+  line-height: 150%;
   margin: 0;
   margin-left: -12px;
-
-  @media (max-width: $vp-1199) {
-    font-size: 18px;
-    line-height: 150%;
-  }
 }
 
 .trainers__info span {
@@ -158,9 +172,10 @@
   }
   line-height: 150%;
   color: #b6bdcc;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   text-align: center;
   margin-left: -12px;
+  margin-top: -4px;
 
   @media (max-width: $vp-1199) {
     margin-top: -5px;
@@ -183,11 +198,17 @@
   list-style-type: disc;
 
   @media (max-width: $vp-1199) {
-    margin-left: 45px;
+    margin-left: 29px;
   }
 
   @media (max-width: $vp-767) {
-    margin-left: 20px;
+    margin-left: 0;
+  }
+}
+
+.trainers__info li {
+  @media (max-width: $vp-1199) {
+    padding-left: 4px;
   }
 }
 
@@ -198,18 +219,17 @@
 .trainers__button-prev,
 .trainers__button-next {
   position: absolute;
-  top: 50%;
+  top: 52%;
   margin-top: 30px;
   background-color: transparent;
   border: 0;
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 16px;
-  height: 32px;
+  width: 32px;
+  height: 34px;
   z-index: 1;
   cursor: pointer;
-  padding: 10px;
   box-sizing: content-box;
 
   @media (max-width: $vp-1199) {
@@ -217,10 +237,8 @@
   }
 
   @media (max-width: $vp-767) {
-    width: 10px;
-    height: 19px;
     background-size: 10px 19px;
-    margin-top: 22px;
+    margin-top: 16px;
   }
 
   &:hover {
@@ -229,10 +247,10 @@
 }
 
 .trainers__button-prev {
-  left: -42px;
+  left: -45px;
 
   @media (max-width: $vp-1199) {
-    left: 40px;
+    left: 37px;
   }
 
   @media (max-width: $vp-767) {
@@ -241,11 +259,11 @@
 }
 
 .trainers__button-next {
-  right: -42px;
+  right: -45px;
   transform: rotate(180deg);
 
   @media (max-width: $vp-1199) {
-    right: 40px;
+    right: 37px;
   }
 
   @media (max-width: $vp-767) {
@@ -271,6 +289,10 @@
   }
 
   .trainers__photo:active ~ .trainers__info {
+    display: flex;
+  }
+
+  .trainers__photo:focus-within .trainers__info {
     display: flex;
   }
 }

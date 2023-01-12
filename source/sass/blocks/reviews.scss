@@ -9,7 +9,7 @@
 
   @media (max-width: $vp-767) {
     padding-top: 64px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
   }
 }
 
@@ -42,7 +42,7 @@
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 41px;
+    margin-bottom: 44px;
   }
 }
 
@@ -146,18 +146,17 @@
 .reviews__button-prev,
 .reviews__button-next {
   position: absolute;
-  top: 49%;
+  top: 51%;
   margin-top: 30px;
   background-color: transparent;
   border: 0;
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 16px;
-  height: 32px;
+  width: 32px;
+  height: 34px;
   z-index: 1;
   cursor: pointer;
-  padding: 10px;
   box-sizing: content-box;
 
   @media (max-width: $vp-1199) {
@@ -166,8 +165,6 @@
   }
 
   @media (max-width: $vp-767) {
-    width: 10px;
-    height: 19px;
     background-size: 10px 19px;
     margin-top: 22px;
     top: 50%;

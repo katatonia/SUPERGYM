@@ -21,7 +21,7 @@
   line-height: 30px;
   color: $color-sapphire-rgba;
   padding: 0 24px 10px 22px;
-  border-bottom: 2px solid $color-grey;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   cursor: pointer;
 
   &.active {
@@ -30,7 +30,7 @@
     &::after {
       content: "";
       position: absolute;
-      width: 65px;
+      width: 100%;
       height: 2px;
       left: 0;
       bottom: -2px;
