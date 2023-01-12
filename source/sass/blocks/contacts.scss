@@ -2,18 +2,18 @@
   width: 50%;
   max-width: 683px;
   margin-right: auto;
-  padding: 58px 120px 47px;
+  padding: 58px 120px 53px;
 
   @media (max-width: $vp-1199) {
     width: 100%;
     margin-right: 0;
-    padding: 58px 0 38px 132px;
+    padding: 58px 0 42px 132px;
   }
 
   @media (max-width: $vp-767) {
     padding: 0 15px;
     margin-top: 66px;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
   }
 }
 
@@ -87,10 +87,17 @@
 }
 
 .contacts__list li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: 16px;
 
   @media (max-width: $vp-1199) {
     margin-bottom: 25px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 28px;
   }
 }
 

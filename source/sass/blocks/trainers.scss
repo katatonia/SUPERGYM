@@ -107,11 +107,11 @@
 .trainers__photo img {
   height: auto;
   object-fit: cover;
+  width: 100vw;
 
   @media (max-width: $vp-1199) {
     min-width: 268px;
     min-height: 294px;
-    width: 100%;
     height: auto;
   }
 
@@ -124,9 +124,8 @@
   }
 
   @media (max-width: 320px) {
-    width: 226px;
+    min-width: 226px;
     height: 274px;
-    min-width: auto;
   }
 }
 
@@ -249,6 +248,10 @@
 .trainers__button-prev {
   left: -45px;
 
+  @media (min-width: 1200px) and (max-width: 1280px) {
+    left: 0;
+  }
+
   @media (max-width: $vp-1199) {
     left: 37px;
   }
@@ -261,6 +264,10 @@
 .trainers__button-next {
   right: -45px;
   transform: rotate(180deg);
+
+  @media (min-width: 1200px) and (max-width: 1280px) {
+    right: 0;
+  }
 
   @media (max-width: $vp-1199) {
     right: 37px;

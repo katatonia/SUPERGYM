@@ -57,7 +57,7 @@
   }
 
   @media (max-width: $vp-767) {
-    width: 226px;
+    width: calc(226/320 * 100vw);
     height: auto;
   }
 }

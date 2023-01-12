@@ -16,7 +16,7 @@
 
   @media (max-width: $vp-1199) {
     max-width: 100%;
-    padding: 59px 163px 67px 134px;
+    padding: 63px 163px 69px 134px;
   }
 
   @media (max-width: $vp-767) {
@@ -119,5 +119,6 @@
   @include hover-focus {
     outline: none;
     background: $gradient-btn-bg;
+    margin-top: 11px;
   }
 }

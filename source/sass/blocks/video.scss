@@ -38,7 +38,6 @@
   @media (max-width: $vp-1199) {
     width: 266px;
     height: 167px;
-    // margin-top: -84px;
   }
 
   @media (max-width: $vp-767) {
@@ -56,12 +55,16 @@
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 19%;
-  left: 28%;
   cursor: pointer;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
 
   @media (max-width: $vp-1199) {
     width: 75px;
     height: 75px;
+  }
+  @media (max-width: $vp-1199) {
+    top: calc(50% - 37px);
+    left: calc(50% - 37px);
   }
 }

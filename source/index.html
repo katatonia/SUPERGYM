@@ -22,14 +22,18 @@
     <header class="header">
       <div class="header__container container">
         <div class="header__menu menu">
-          <a class="menu__logo" href="#">
-            <svg width="122" height="44" viewBox="0 0 122 44">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <span class="menu__phone">
-            <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
-          </span>
+          <div class="menu__logo-container">
+            <a class="menu__logo" href="#">
+              <svg width="122" height="44" viewBox="0 0 122 44">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="menu__phone-container">
+            <span class="menu__phone">
+              <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+            </span>
+          </div>
         </div>
         <div class="header__preview preview">
           <div class="preview__content">
@@ -624,14 +628,12 @@
 
   <footer class="footer">
     <div class="footer__container container">
+      <a class="footer__logo">
+        <svg width="88" height="32" viewBox="0 0 88 32">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
       <ul class="footer__nav-list">
-        <li class="footer__nav-item footer__nav-item--logo">
-          <a class="footer__logo">
-            <svg width="88" height="32" viewBox="0 0 88 32">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-          </a>
-        </li>
         <li class="footer__nav-item footer__nav-item--services">
           <a href="#">Услуги</a>
         </li>

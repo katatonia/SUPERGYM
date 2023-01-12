@@ -1,6 +1,6 @@
 .header {
   background: $gradient-bg-desktop;
-  padding-bottom: 50px;
+  padding-bottom: 54px;
 
   @media (max-width: $vp-1199) {
     background: $gradient-bg-tablet;
@@ -9,7 +9,7 @@
 
   @media (max-width: $vp-767) {
     background: $gradient-bg-mobile;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
   }
 }
 
