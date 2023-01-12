@@ -176,6 +176,11 @@
     line-height: 12px;
     padding: 12px;
     border-width: 2px;
+    margin-right: 5px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-right: 0;
   }
 
   @include hover-focus {

@@ -281,7 +281,7 @@
 // // Показ контента
 
 @media (min-width: $vp-1200) {
-  .trainers__photo:hover h3 {
+  .trainers__item:hover .trainers__photo h3 {
     display: none;
   }
 
@@ -291,15 +291,16 @@
 }
 
 @media (max-width: $vp-1199) {
-  .trainers__photo:active h3 {
+  .trainers__item:active .trainers__photo h3 {
     display: none;
   }
 
-  .trainers__photo:active ~ .trainers__info {
+  .trainers__item:active .trainers__info {
     display: flex;
   }
 
-  .trainers__photo:focus-within .trainers__info {
+  .trainers__item:focus .trainers__info {
     display: flex;
+    z-index: 2;
   }
 }

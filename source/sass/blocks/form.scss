@@ -38,6 +38,7 @@
   @media (max-width: $vp-1199) {
     font-size: 42px;
     text-align: left;
+    padding-bottom: 33px;
   }
 
   @media (max-width: $vp-767) {
@@ -80,6 +81,9 @@
   @media (max-width: $vp-767) {
     padding-left: 0;
     margin-right: 15px;
+    margin-bottom: 25px;
+    padding-top: 9px;
+    padding-bottom: 7px;
   }
 
   @include hover-focus {
@@ -113,7 +117,7 @@
   outline: 3px solid $color-default-white;
 
   @media (max-width: $vp-767) {
-    margin-top: 9px;
+    margin-top: 15px;
   }
 
   @include hover-focus {
