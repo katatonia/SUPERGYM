@@ -5,7 +5,7 @@ import {onTabBtnClick} from './modules/tabs';
 import {createTrainersSlider} from './modules/trainers-slider';
 import {createReviewsSlider} from './modules/reviews-slider';
 import {onFormSubmit} from './modules/local-storage';
-import {showCard} from './modules/show-card';
+import {onCardClick} from './modules/show-card';
 
 // ---------------------------------
 
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createTrainersSlider();
   createReviewsSlider();
   onFormSubmit();
-  showCard();
+  onCardClick();
 
   // Modules
   // ---------------------------------

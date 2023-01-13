@@ -22,7 +22,7 @@ const showCardInfo = () => {
   }
 };
 
-const showCard = () => {
+const onCardClick = () => {
   window.addEventListener('resize', () => {
     if (window.innerWidth <= 1199) {
       showCardInfo();
@@ -30,4 +30,4 @@ const showCard = () => {
   });
 };
 
-export {showCard};
+export {onCardClick};
