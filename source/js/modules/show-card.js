@@ -22,4 +22,12 @@ const showCardInfo = () => {
   }
 };
 
-export {showCardInfo};
+const showCard = () => {
+  window.addEventListener('resize', () => {
+    if (window.innerWidth <= 1199) {
+      showCardInfo();
+    }
+  });
+};
+
+export {showCard};
