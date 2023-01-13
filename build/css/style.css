@@ -2742,7 +2742,7 @@ button,
 }
 
 .sale__content a {
-  width: 90px;
+  width: 79px;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -3087,7 +3087,7 @@ button,
   width: 50%;
   max-width: 683px;
   margin-right: auto;
-  padding: 58px 120px 53px;
+  padding: 58px 120px 44px;
 }
 
 .contacts__body {
@@ -3141,7 +3141,7 @@ button,
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 }
 
 .contacts__list span,
