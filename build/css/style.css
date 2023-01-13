@@ -2684,6 +2684,16 @@ button,
   transform: rotate(180deg);
 }
 
+.none {
+  display: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sale {
   margin-top: 151px;
 }

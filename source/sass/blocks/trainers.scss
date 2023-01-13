@@ -278,7 +278,7 @@
   }
 }
 
-// // Показ контента
+// Показ контента
 
 @media (min-width: $vp-1200) {
   .trainers__item:hover .trainers__photo h3 {
@@ -303,4 +303,12 @@
     display: flex;
     z-index: 2;
   }
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
 }
