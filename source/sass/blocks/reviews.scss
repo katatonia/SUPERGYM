@@ -57,7 +57,7 @@
   }
 
   @media (max-width: $vp-767) {
-    width: calc(226/320 * 100vw);
+    width: calc(226 / 320 * 100vw);
     height: auto;
   }
 }
@@ -94,7 +94,6 @@
     padding: 48px 25px 35px;
     box-shadow: none;
   }
-
 }
 
 .reviews__photo {

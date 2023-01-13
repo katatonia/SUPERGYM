@@ -1,25 +1,25 @@
 .video {
-    display: block;
-    width: 364px;
-    height: 228px;
-    position: relative;
-    bottom: 111px;
-    left: 438px;
+  display: block;
+  width: 364px;
+  height: 228px;
+  position: relative;
+  bottom: 111px;
+  left: 438px;
 
-    @media (max-width: $vp-1199) {
-      width: 266px;
-      height: 167px;
-      margin: 0 auto;
-      bottom: 84px;
-      left: 0;
-    }
+  @media (max-width: $vp-1199) {
+    width: 266px;
+    height: 167px;
+    margin: 0 auto;
+    bottom: 84px;
+    left: 0;
+  }
 
-    @media (max-width: $vp-767) {
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-      bottom: 0;
-    }
+  @media (max-width: $vp-767) {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    bottom: 0;
+  }
 }
 
 .video__iframe {
@@ -63,6 +63,7 @@
     width: 75px;
     height: 75px;
   }
+
   @media (max-width: $vp-1199) {
     top: calc(50% - 37px);
     left: calc(50% - 37px);
