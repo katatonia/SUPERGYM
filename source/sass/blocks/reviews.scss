@@ -80,12 +80,21 @@
     row-gap: 11px;
   }
 
+  @media (min-width: 407px) and (max-width: 767px) {
+    grid-template-areas:
+      "name name"
+      "text text";
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 1fr;
+  }
+
   @media (max-width: $vp-767) {
     column-gap: 0;
     row-gap: 13px;
     padding: 48px 25px 35px;
     box-shadow: none;
   }
+
 }
 
 .reviews__photo {
@@ -100,6 +109,10 @@
     height: 68px;
     margin-top: -7px;
     margin-left: 16px;
+  }
+
+  @media (min-width: 407px) and (max-width: 767px) {
+    grid-area: name;
   }
 }
 
@@ -125,6 +138,13 @@
   @media (max-width: $vp-767) {
     line-height: 130%;
   }
+
+  @media (min-width: 407px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    grid-area: name;
+    padding-left: 105px;
+  }
 }
 
 .reviews__item p {
@@ -140,6 +160,10 @@
   @media (max-width: $vp-767) {
     grid-column: 1/-1;
     text-align: center;
+  }
+
+  @media (min-width: 407px) and (max-width: 767px) {
+    grid-area: text;
   }
 }
 
