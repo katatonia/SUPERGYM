@@ -140,10 +140,8 @@
   }
 
   @media (min-width: 407px) and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
     grid-area: name;
-    padding-left: 105px;
+    padding-left: 130px;
   }
 }
 
