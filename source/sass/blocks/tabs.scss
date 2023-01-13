@@ -39,14 +39,28 @@
       }
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      left: 0;
-      bottom: -2px;
-      background: $color-crimson;
+    &:last-child {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 75%;
+        height: 2px;
+        right: 0;
+        bottom: -2px;
+        background: $color-crimson;
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        right: 0;
+        bottom: -2px;
+        background: $color-crimson;
+      }
     }
   }
 

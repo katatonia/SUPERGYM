@@ -2173,12 +2173,22 @@ button,
   background: #d10a42;
 }
 
-.tabs__btn.active::after {
+.tabs__btn.active:last-child::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  right: 0;
+  bottom: -2px;
+  background: #d10a42;
+}
+
+.tabs__btn.active:nth-child(2)::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  left: 0;
+  right: 0;
   bottom: -2px;
   background: #d10a42;
 }
