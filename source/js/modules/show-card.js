@@ -6,7 +6,9 @@ const showCardInfo = () => {
       item.addEventListener('click', () => {
         cards.forEach((info) => {
           const cardsInfo = info.querySelector('.trainers__info');
+          const cardsTitle = info.querySelector('h3');
           cardsInfo.style.display = 'none';
+          cardsTitle.style.display = 'block';
         });
         let currentCard = item;
         const cardInfo = currentCard.querySelector('.trainers__info');
