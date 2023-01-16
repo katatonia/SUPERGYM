@@ -3742,6 +3742,10 @@ button,
     z-index: 2;
   }
 
+  .trainers__item:focus .trainers__photo h3 {
+    display: none;
+  }
+
   .sale {
     margin-top: 86px;
   }
