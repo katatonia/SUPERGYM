@@ -288,6 +288,14 @@
   .trainers__item:hover .trainers__info {
     display: flex;
   }
+
+  .trainers__item:focus .trainers__photo h3 {
+    display: none;
+  }
+
+  .trainers__item:focus .trainers__info {
+    display: flex;
+  }
 }
 
 @media (max-width: $vp-1199) {

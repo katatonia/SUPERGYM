@@ -3314,6 +3314,16 @@ button,
     display: -ms-flexbox;
     display: flex;
   }
+
+  .trainers__item:focus .trainers__photo h3 {
+    display: none;
+  }
+
+  .trainers__item:focus .trainers__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (max-width: 1199px) {
