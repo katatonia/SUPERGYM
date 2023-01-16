@@ -13,7 +13,7 @@ const createTrainersSlider = () => {
       slidesPerView: 1,
       spaceBetween: 15,
       initialSlide: 2,
-      loop: true,
+      loop: false,
       breakpoints: {
         768: {
           slidesPerView: 2,
