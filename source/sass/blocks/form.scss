@@ -87,7 +87,7 @@
   }
 
   @include hover-focus {
-    outline: 1px solid $color-default-white;
+    outline: 1px solid rgba(116, 129, 156, 1);
     border-radius: 3px;
   }
 }

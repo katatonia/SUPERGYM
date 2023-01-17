@@ -1877,6 +1877,7 @@ button,
 
 .intro {
   padding-bottom: 9px;
+  cursor: default;
 }
 
 .intro__container {
@@ -2106,6 +2107,7 @@ button,
 .tariffs {
   position: relative;
   background-color: #f8f9fc;
+  cursor: default;
 }
 
 .tariffs__container {
@@ -2350,6 +2352,7 @@ button,
   margin-top: 0;
   margin-bottom: 47px;
   margin-left: 10px;
+  cursor: default;
 }
 
 .advantages__wrapper {
@@ -2401,6 +2404,7 @@ button,
   position: absolute;
   top: 8px;
   width: 240px;
+  cursor: default;
 }
 
 .advantages__central-block span {
@@ -2482,6 +2486,7 @@ button,
   font-size: 22px;
   line-height: 150%;
   color: #102654;
+  cursor: default;
 }
 
 .advantages__item p {
@@ -2490,6 +2495,7 @@ button,
   font-size: 16px;
   line-height: 140%;
   color: #102654;
+  cursor: default;
 }
 
 .advantages__number {
@@ -2516,6 +2522,7 @@ button,
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  cursor: default;
 }
 
 .advantages__number span {
@@ -2525,11 +2532,13 @@ button,
   color: #2e35ac;
   display: block;
   margin-top: -22px;
+  cursor: default;
 }
 
 .trainers {
   padding-top: 53px;
   padding-bottom: 91px;
+  cursor: default;
 }
 
 .trainers__container {
@@ -2723,6 +2732,7 @@ button,
   line-height: 59px;
   letter-spacing: 0.03em;
   text-align: center;
+  cursor: default;
 }
 
 .sale__content {
@@ -2740,6 +2750,7 @@ button,
   background-color: #ed0233;
   color: #ffffff;
   padding: 34px 28px 45px;
+  cursor: default;
 }
 
 .sale__content span {
@@ -2784,8 +2795,7 @@ button,
 }
 
 .sale__content a.focus-visible:focus {
-  color: #1c3374;
-  border-bottom: 1px solid #1c3374;
+  opacity: 0.3;
 }
 
 .sale__img img {
@@ -2832,6 +2842,7 @@ button,
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding: 13px 28px;
+  cursor: default;
 }
 
 .sale__block-wrapper h3 {
@@ -2858,16 +2869,17 @@ button,
   letter-spacing: 0.05em;
   margin-top: auto;
   margin-bottom: 17px;
+  cursor: pointer;
 }
 
 .sale__block-wrapper a.focus-visible:focus {
-  color: #ed0233;
-  border-bottom: 1px solid #ed0233;
+  opacity: 0.3;
 }
 
 .reviews {
   padding-top: 67px;
   padding-bottom: 120px;
+  cursor: default;
 }
 
 .reviews__container {
@@ -3002,6 +3014,7 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   border-top: 1px solid #74819c;
+  cursor: default;
 }
 
 .form {
@@ -3047,7 +3060,7 @@ button,
 }
 
 .form input.focus-visible:focus {
-  outline: 1px solid #ffffff;
+  outline: 1px solid rgb(116, 129, 156);
   border-radius: 3px;
 }
 
@@ -3178,6 +3191,7 @@ button,
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  cursor: default;
 }
 
 .contacts__list:first-child {
@@ -3242,10 +3256,6 @@ button,
 
 .footer__logo svg {
   margin-top: 2px;
-}
-
-.footer__logo svg.focus-visible:focus {
-  opacity: 0.7;
 }
 
 .footer__social-list {
@@ -4673,17 +4683,15 @@ button,
   }
 
   .sale__content a:hover:not(.focus-visible) {
-    color: #1c3374;
-    border-bottom: 1px solid #1c3374;
+    opacity: 0.3;
   }
 
   .sale__block-wrapper a:hover:not(.focus-visible) {
-    color: #ed0233;
-    border-bottom: 1px solid #ed0233;
+    opacity: 0.3;
   }
 
   .form input:hover:not(.focus-visible) {
-    outline: 1px solid #ffffff;
+    outline: 1px solid rgb(116, 129, 156);
     border-radius: 3px;
   }
 
@@ -4694,10 +4702,6 @@ button,
   }
 
   .footer__nav-item a:hover:not(.focus-visible) {
-    opacity: 0.7;
-  }
-
-  .footer__logo svg:hover:not(.focus-visible) {
     opacity: 0.7;
   }
 }
