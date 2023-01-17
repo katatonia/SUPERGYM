@@ -1727,6 +1727,9 @@ button,
 
 .menu__logo svg.focus-visible:focus {
   opacity: 0.7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu__phone {
@@ -1743,6 +1746,9 @@ button,
 
 .menu__phone a.focus-visible:focus {
   opacity: 0.7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu__phone-container {
@@ -1825,6 +1831,9 @@ button,
 
 .preview__list-item a.focus-visible:focus {
   opacity: 0.7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .preview__btn {
@@ -1848,9 +1857,12 @@ button,
   letter-spacing: 0.05em;
   color: #ffffff;
   outline: 4px solid #ffffff;
-  background-color: transparent;
+  background: transparent;
   margin-left: auto;
   scroll-behavior: smooth;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
 }
 
 .preview__btn.focus-visible:focus {
@@ -2165,38 +2177,26 @@ button,
   color: #102654;
 }
 
-.tabs__btn.active:first-child::after {
-  content: "";
-  position: absolute;
-  width: 75%;
-  height: 2px;
-  left: 0;
-  bottom: -2px;
-  background: #d10a42;
-}
-
-.tabs__btn.active:last-child::after {
-  content: "";
-  position: absolute;
-  width: 75%;
-  height: 2px;
-  right: 0;
-  bottom: -2px;
-  background: #d10a42;
-}
-
-.tabs__btn.active:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  right: 0;
-  bottom: -2px;
-  background: #d10a42;
-}
-
 .tabs__btn.no-js {
   border-bottom: 2px solid #787878;
+}
+
+.tabs__btn::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  background: #d10a42;
+}
+
+.tabs__btn:hover::after {
+  width: 100%;
 }
 
 .tabs__nav a:first-child {
@@ -2792,10 +2792,15 @@ button,
   border-bottom: 1px solid #ffffff;
   text-transform: uppercase;
   margin: auto 0 0 17px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sale__content a.focus-visible:focus {
-  opacity: 0.3;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .sale__img img {
@@ -2870,10 +2875,15 @@ button,
   margin-top: auto;
   margin-bottom: 17px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sale__block-wrapper a.focus-visible:focus {
-  opacity: 0.3;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .reviews {
@@ -3252,6 +3262,9 @@ button,
 
 .footer__nav-item a.focus-visible:focus {
   opacity: 0.7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer__logo svg {
@@ -3266,6 +3279,9 @@ button,
 
 .footer__social-list a:hover {
   opacity: 0.7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer__social-link,
@@ -4645,14 +4661,23 @@ button,
 @media (hover: hover) {
   .menu__logo svg:hover:not(.focus-visible) {
     opacity: 0.7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
   }
 
   .menu__phone a:hover:not(.focus-visible) {
     opacity: 0.7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
   }
 
   .preview__list-item a:hover:not(.focus-visible) {
     opacity: 0.7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
   }
 
   .preview__btn:hover:not(.focus-visible) {
@@ -4683,11 +4708,15 @@ button,
   }
 
   .sale__content a:hover:not(.focus-visible) {
-    opacity: 0.3;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   .sale__block-wrapper a:hover:not(.focus-visible) {
-    opacity: 0.3;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   .form input:hover:not(.focus-visible) {
@@ -4703,6 +4732,9 @@ button,
 
   .footer__nav-item a:hover:not(.focus-visible) {
     opacity: 0.7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
   }
 }
 

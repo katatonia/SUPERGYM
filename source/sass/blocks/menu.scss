@@ -39,6 +39,7 @@
 
   @include hover-focus {
     opacity: 0.7;
+    transition: 0.5s;
   }
 }
 
@@ -80,6 +81,7 @@
 
   @include hover-focus {
     opacity: 0.7;
+    transition: 0.5s;
   }
 }
 
