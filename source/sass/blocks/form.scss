@@ -86,7 +86,7 @@
     padding-bottom: 7px;
   }
 
-  @include hover-focus {
+  &:focus {
     outline: 1px solid rgba(116, 129, 156, 1);
     border-radius: 3px;
   }
@@ -123,5 +123,7 @@
   @include hover-focus {
     outline: none;
     background: $gradient-btn-bg;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.50);
+    transition: 0.1s;
   }
 }

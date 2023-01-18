@@ -109,8 +109,8 @@
   }
 
   @include hover-focus {
-    opacity: 0.7;
-    transition: 0.5s;
+    transition: 0.3s;
+    text-shadow: 0 0 5px $color-default-white;
   }
 }
 
@@ -144,12 +144,15 @@
   }
 }
 
-.footer__social-list a:hover {
-  opacity: 0.7;
-  transition: 0.5s;
-}
-
 .footer__social-link,
 .footer__logo svg {
   fill: $color-default-white;
 }
+
+.footer__social-link svg {
+  @include hover-focus {
+    transition: 0.3s;
+    filter: drop-shadow(0 0 5px $color-default-white);
+  }
+}
+

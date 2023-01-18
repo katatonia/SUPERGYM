@@ -125,13 +125,13 @@
   @include hover-focus {
     padding: 6px;
     background: $gradient-text;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   }
 
   &:focus-within {
     padding: 6px;
     background: $gradient-text;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -231,5 +231,7 @@
     outline: none;
     background: $gradient-btn-bg;
     color: $color-default-white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    transition: 0.1s;
   }
 }

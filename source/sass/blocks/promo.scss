@@ -186,6 +186,8 @@
   @include hover-focus {
     background: $gradient-btn-bg;
     outline: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+    transition: 0.1s;
   }
 }
 
