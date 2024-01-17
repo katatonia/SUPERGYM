@@ -14,10 +14,12 @@
 
 .tabs__btn {
   position: relative;
+
   font: {
     family: $roboto-condensed-regular;
     size: 20px;
   }
+
   line-height: 30px;
   color: $color-sapphire-rgba;
   padding: 0 24px 10px 22px;
@@ -53,6 +55,7 @@
     font: {
       size: 18px;
     }
+
     line-height: 27px;
     padding: 0 27px 12px;
   }
@@ -61,6 +64,7 @@
     font: {
       size: 16px;
     }
+
     padding: 0 23px 12px;
   }
 }
@@ -117,6 +121,7 @@
   padding: 6px;
   margin-bottom: 40px;
   background: $color-default-white;
+  transition: .3s;
 
   @media (max-width: $vp-767) {
     margin-bottom: 37px;
@@ -140,6 +145,7 @@
     family: $roboto-condensed-bold;
     size: 26px;
   }
+
   line-height: 28px;
   text-align: center;
   padding-bottom: 8px;
@@ -148,6 +154,7 @@
     font: {
       size: 22px;
     }
+
     line-height: 24px;
   }
 }
@@ -157,6 +164,7 @@
     family: $roboto-condensed-regular;
     size: 16px;
   }
+
   line-height: 24px;
   color: $color-catalina-blue;
   text-align: center;
@@ -172,10 +180,12 @@
   justify-content: center;
   position: relative;
   z-index: 1;
+
   font: {
     family: $roboto-condensed-bold;
     size: 60px;
   }
+
   line-height: 90px;
   color: $color-egyptian-blue;
   padding-left: 5px;
@@ -203,6 +213,7 @@
     font: {
       size: 48px;
     }
+
     line-height: 72px;
     padding-bottom: 33px;
   }
@@ -217,10 +228,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .3s;
+
   font: {
     family: $roboto-condensed-bold;
     size: 12px;
   }
+
   line-height: 14px;
   letter-spacing: 0.05em;
   outline: 2px solid $color-resolution-blue;

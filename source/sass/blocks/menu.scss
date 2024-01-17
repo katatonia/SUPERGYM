@@ -36,11 +36,6 @@
   @media (max-width: $vp-767) {
     width: 69px;
   }
-
-  @include hover-focus {
-    transition: 0.3s;
-    filter: drop-shadow(0 0 20px $color-default-black);
-  }
 }
 
 .menu__phone {
@@ -61,14 +56,17 @@
     family: $alumni-sans-bold;
     size: 26px;
   }
+
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $color-default-white;
+  transition: .3s;
 
   @media (max-width: $vp-1199) {
     font: {
       size: 24px;
     }
+
     line-height: 26px;
     letter-spacing: 0.02em;
   }
@@ -80,8 +78,7 @@
   }
 
   @include hover-focus {
-    transition: 0.3s;
-    text-shadow: 0 0 20px $color-default-black;
+    text-shadow: 0 0 5px $color-default-white;
   }
 }
 

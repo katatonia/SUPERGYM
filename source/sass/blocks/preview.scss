@@ -27,10 +27,12 @@
   grid-area: title;
   display: block;
   text-align: right;
+
   font: {
     family: $alumni-sans-extra-bold;
     size: 92px;
   }
+
   line-height: 110px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -41,6 +43,7 @@
     font: {
       size: 78px;
     }
+
     line-height: 84px;
     text-transform: none;
     letter-spacing: 0;
@@ -55,10 +58,12 @@
 .preview__title span {
   display: block;
   text-align: right;
+
   font: {
     family: $alumni-sans-bold;
     size: 41px;
   }
+
   line-height: 52.8px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -68,6 +73,7 @@
     font: {
       size: 30px;
     }
+
     line-height: 37px;
     padding: 0 0 9px 0;
   }
@@ -76,6 +82,7 @@
     font: {
       size: 25px;
     }
+
     line-height: 33px;
     padding: 20px 0 15px 0;
   }
@@ -102,6 +109,7 @@
     family: $roboto-condensed-regular;
     size: 14px;
   }
+
   line-height: 21px;
   text-align: right;
   cursor: pointer;
@@ -109,10 +117,10 @@
 
 .preview__list-item a {
   color: $color-default-white;
+  transition: .3s;
 
   @include hover-focus {
-    transition: 0.3s;
-    text-shadow: 0 0 10px $color-default-black;
+    text-shadow: 0 0 5px $color-default-white;
   }
 }
 
@@ -123,10 +131,12 @@
   justify-content: center;
   width: 230px;
   height: 55px;
+
   font: {
     family: $roboto-condensed-bold;
     size: 12px;
   }
+
   line-height: 14px;
   letter-spacing: 0.05em;
   color: $color-default-white;
@@ -134,12 +144,12 @@
   background: transparent;
   margin-left: auto;
   scroll-behavior: smooth;
+  transition: .3s;
 
   @include hover-focus {
     background: $gradient-btn-bg;
     outline: none;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.50);
-    transition: 0.1s;
   }
 
   @media (max-width: $vp-1199) {

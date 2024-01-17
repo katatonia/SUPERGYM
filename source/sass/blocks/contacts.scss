@@ -54,6 +54,7 @@
     family: $alumni-sans-semi-bold;
     size: 54px;
   }
+
   line-height: 59px;
   letter-spacing: 0.03em;
   padding-bottom: 40px;
@@ -67,6 +68,7 @@
     font: {
       size: 32px;
     }
+
     line-height: 35px;
     padding-bottom: 38px;
   }
@@ -77,6 +79,7 @@
     family: $roboto-condensed-bold;
     size: 16px;
   }
+
   line-height: 24px;
   padding-bottom: 2px;
 
@@ -107,6 +110,7 @@
     family: $roboto-condensed-regular;
     size: 14px;
   }
+
   line-height: 21px;
   cursor: default;
 
@@ -132,5 +136,12 @@
 
   @media (max-width: $vp-767) {
     padding-left: 0;
+  }
+}
+
+.contacts__list--connection a {
+  @include hover-focus {
+    cursor: pointer;
+    opacity: .5;
   }
 }

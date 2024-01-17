@@ -96,10 +96,12 @@
 
 .footer__nav-item a {
   color: $color-default-white;
+
   font: {
     family: $roboto-condensed-light;
     size: 14px;
   }
+
   line-height: 16px;
   user-select: none;
 
@@ -109,7 +111,7 @@
   }
 
   @include hover-focus {
-    transition: 0.3s;
+    transition: .3s;
     text-shadow: 0 0 5px $color-default-white;
   }
 }
@@ -155,4 +157,3 @@
     filter: drop-shadow(0 0 5px $color-default-white);
   }
 }
-

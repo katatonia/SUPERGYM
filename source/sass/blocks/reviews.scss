@@ -26,6 +26,7 @@
     family: $alumni-sans-semi-bold;
     size: 54px;
   }
+
   line-height: 65px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
@@ -127,10 +128,12 @@
 
 .reviews__item h3 {
   margin: 0;
+
   font: {
     weight: 700;
     size: 20px;
   }
+
   line-height: 150%;
   grid-column: 2/3;
   grid-row: 1/2;
@@ -147,10 +150,12 @@
 
 .reviews__item p {
   margin: 0;
+
   font: {
     weight: 400;
     size: 16px;
   }
+
   line-height: 140%;
   grid-column: 2/3;
   grid-row: 2/3;
@@ -195,8 +200,8 @@
     top: 50%;
   }
 
-  &:hover {
-    opacity: 0.5;
+  @include hover-focus {
+    opacity: .5;
   }
 }
 

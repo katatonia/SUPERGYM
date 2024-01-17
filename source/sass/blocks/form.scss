@@ -30,6 +30,7 @@
     family: $alumni-sans-extra-bold;
     size: 55px;
   }
+
   line-height: 46px;
   color: $color-default-white;
   letter-spacing: 0.03em;
@@ -45,6 +46,7 @@
     font: {
       size: 32px;
     }
+
     line-height: 35px;
   }
 }
@@ -69,6 +71,7 @@
     family: $roboto-condensed-regular;
     size: 14px;
   }
+
   line-height: 16px;
   color: $color-default-white;
   width: 100%;
@@ -97,6 +100,7 @@
     family: $roboto-condensed-regular;
     size: 14px;
   }
+
   line-height: 16px;
   color: $color-default-white;
 }
@@ -107,14 +111,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   font: {
     family: $roboto-condensed-bold;
     size: 14px;
   }
+
   line-height: 16px;
   letter-spacing: 0.05em;
   color: $color-default-white;
   outline: 3px solid $color-default-white;
+  transition: .3s;
 
   @media (max-width: $vp-767) {
     margin-top: 15px;
@@ -124,6 +131,5 @@
     outline: none;
     background: $gradient-btn-bg;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.50);
-    transition: 0.1s;
   }
 }
